@@ -1,0 +1,32 @@
+@import url('yui_reset.css');
+
+@import url('yui_base.css');
+
+@import url('yui_fonts.css');
+/* line 7, style.less */
+.position {
+  position: relative;
+  overflow: hidden;
+}
+/* line 8, style.less */
+.helvetica {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+/* line 9, style.less */
+.redondas {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  /* future proofing */
+
+  -khtml-border-radius: 10px;
+  /* for old Konqueror browsers */
+
+}
+/* line 28, style.less */
+html,
+body {
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}

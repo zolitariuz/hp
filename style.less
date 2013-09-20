@@ -15,88 +15,15 @@
 
 // ------ Variables ------ //
 
-@azul: #1b1464;
-@naranja: #ee4623;
+@azul: #1aa2dc;
+@azul_obscuro: #2a77a2;
+
+@rojo: #e95446;
+@rojo_obscuro: #c03531;
 
 // ------ General ------ //
 
 // ------ Home ------ //
 
-html, body {background: #1b1464;  -webkit-font-smoothing: antialiased; .helvetica; }
+html, body {background: #fff;  -webkit-font-smoothing: antialiased; .helvetica; }
 
-body.video{
-	#logo{ margin: 80px auto 0 auto;
-		h1{ text-align: center; }
-		img{ margin: auto; }
-	}
-	#video{ width: 792px; height: 528px; margin: auto; } 
-	#saltar{ width: 120px; margin: auto; border-top: 1px solid #fff; padding-top: 5px; margin-bottom: 40px; margin-top: 40px; text-transform: uppercase; text-align: center; position: relative; z-index: 9999;
-		a{ color: #fff; text-decoration: none; }
-	}
-	#footer{ margin: 50px auto 0 auto;  padding-bottom: 70px; }
-}
-
-#container{ width: 1024px; margin: auto; }
-
-#header{ height: 225px; z-index: 2; position: relative;
-	#logo{ width: 270px; height: 70px; background: #fff; padding: 20px 180px 20px 50px;
-		h1{ width: 0; height: 0; text-indent: -9999em; margin: 0;
-			a{ width: 270px; height: 70px; display: block;
-				img{ display: block; }
-			}
-		}
-	}
-	#nav{ width: 1024px; height: 125px; position: relative; top: -115px; margin: 0; padding-top: 105px; list-style: none; background: url(images/plecas.png) no-repeat;
-		li{ margin-left: 50px; font-size: 18px; line-height: 32px; font-weight: bold;
-			a{color: #fff; text-decoration: none;
-			    &:hover{ text-decoration: underline;}
-			    &.selected{ text-decoration: underline;}
-			}
-		}
-	}
-	
-}
-
-#main_wrap{ width: 1024px; height: 626px; position: relative; top: -125px; background: url(images/bg.jpg) no-repeat;
-	#main{ width: 740px; height: auto; padding: 10px; .redondas; background: url(images/bg_blue.png) repeat; color: #fff; position: relative; top: 140px; left: 50px; .position;
-		h2{   margin: 0 0 20px 0;
-			img{ width: auto; height: auto; }
-		}
-		ul{ list_style: disc;
-			li{ margin-bottom: 10px; }
-		}
-		
-		#left{ width: 49%; float: left; }
-		#right{ width: 49%; margin-left: 2%; float: left; }
-		
-		#full_white{ width: 100%; padding: 10px; height: auto; position: relative; background: #fff; display: inline-block; box-sizing: border-box;
-			h3{ font-size: 20px; color: @naranja; margin: 0 0 10px 0; }
-			ul{ margin: 0; list-style: none;
-				li {color: @azul; }
-			}
-		}
-		
-		.logos{ width: 100%; margin-bottom: 20px; .position; background: #fff;
-			img{ display: block; float: left; margin-left: 10px; }
-		}
-		
-		#forma_contacto{ width: 50%;
-			label{ width: 30%; color: #fff; margin: 0 8% 20px 0; float: left; font-size: 16px; font-weight: bold; }
-			input{ width: 60%; float: right; margin-bottom: 20px;
-				&[type='text']{}
-				&[type='submit']{ width: 100px; float: right; }
-			}
-			textarea{ width: 61%; height: 150px; float: right; margin-bottom: 10px; }
-		}
-		
-	}
-}
-
-
-#footer{ width: 1024px; margin: auto; position: relative; top: -105px;  padding-bottom: 30px; border-bottom: 1px solid #fff;
-	#menu_home{ width: 400px; margin: auto; display: block; list-style: none;
-		li{ display: inline-block;
-			a{ color: #fff; text-decoration: none;}
-		}
-	}
-}
