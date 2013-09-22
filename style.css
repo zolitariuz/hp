@@ -3,16 +3,13 @@
 @import url('yui_base.css');
 
 @import url('yui_fonts.css');
-/* line 7, style.less */
 .position {
   position: relative;
   overflow: hidden;
 }
-/* line 8, style.less */
 .helvetica {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-/* line 9, style.less */
 .redondas {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -23,34 +20,27 @@
   /* for old Konqueror browsers */
 
 }
-/* line 16, style.less */
 .clearfix {
   zoom: 1;
 }
-/* line 18, style.less */
 .clearfix:before {
   content: '';
   display: block;
 }
-/* line 19, style.less */
 .clearfix:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 22, style.less */
 .left {
   float: left;
 }
-/* line 23, style.less */
 .right {
   float: right;
 }
-/* line 25, style.less */
 .last {
   margin-right: 0px !important;
 }
-/* line 42, style.less */
 * {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -62,88 +52,72 @@
   /* Opera/IE 8+ */
 
 }
-/* line 47, style.less */
 html,
 body {
   background: #fff;
   -webkit-font-smoothing: antialiased;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-/* line 49, style.less */
 .container {
   width: 1024px;
   margin: 20px auto 0 auto;
 }
-/* line 51, style.less */
-.header {
+header {
   margin: 0 0 30px 0;
   border-bottom: 1px solid #949699;
 }
-/* line 52, style.less */
-.header .logo {
+header .logo {
   width: 95px;
   height: 95px;
   margin: 0 20px 0 0;
   display: block;
   float: left;
 }
-/* line 57, style.less */
-.header h1 {
+header h1 {
   height: 95px;
   margin: 0 0 0 0;
   line-height: 95px;
   font-size: 40px;
 }
-/* line 58, style.less */
-.header h1 a {
+header h1 a {
   color: #000;
   text-decoration: none;
 }
-/* line 61, style.less */
-.header .instruccion {
+header .instruccion {
   margin: 20px 0 10px 0;
   color: #949699;
   font-size: 20px;
 }
-/* line 66, style.less */
 .content {
   width: 84%;
   background: #f5f6f7;
 }
-/* line 68, style.less */
 .aplicacion {
   padding: 20px;
   border-bottom: 1px solid #949699;
 }
-/* line 69, style.less */
 .aplicacion img {
   width: 15%;
   margin: 0 5% 0 0;
   display: block;
 }
-/* line 70, style.less */
 .aplicacion .info_aplicacion {
   width: 80%;
 }
-/* line 71, style.less */
 .aplicacion .info_aplicacion h2 {
   margin: 0;
 }
-/* line 76, style.less */
-.sub_menu {
+#menu_segmentos {
   width: 20%;
 }
-/* line 77, style.less */
-.sub_menu ul {
+#menu_segmentos ul {
   margin: 0;
   list-style: none;
 }
-/* line 78, style.less */
-.sub_menu ul li {
+#menu_segmentos ul li {
   border-bottom: 1px solid #fff;
 }
-/* line 79, style.less */
-.sub_menu ul li a {
+#menu_segmentos ul li a {
   width: 100%;
   padding: 15px 0;
   line-height: 60px;
@@ -154,35 +128,38 @@ body {
   text-decoration: none;
   color: #fff;
 }
-/* line 80, style.less */
-.sub_menu ul li a:hover {
+#menu_segmentos ul li a:hover {
   background: #2a77a2;
 }
-/* line 86, style.less */
+#menu_segmentos ul li a.activo {
+  background-color: #2a77a2;
+  cursor: default;
+}
 .main_content {
   width: 80%;
 }
-/* line 87, style.less */
 .main_content iframe {
   width: 600px;
   height: 338px;
   display: block;
   margin: 15px auto;
 }
-/* line 90, style.less */
+.main_content div {
+  width: 100%;
+  height: 362px;
+  border: 1px solid #000;
+  display: block;
+}
 .menu {
   width: 14%;
 }
-/* line 91, style.less */
 .menu ul {
   margin: 0;
   list-style: none;
 }
-/* line 92, style.less */
 .menu ul li {
   border-bottom: 1px solid #fff;
 }
-/* line 93, style.less */
 .menu ul li a {
   width: 100%;
   padding: 15px 0;
@@ -192,16 +169,13 @@ body {
   text-align: center;
   background: #e95446;
 }
-/* line 94, style.less */
 .menu ul li a img {
   width: 34%;
   height: auto;
 }
-/* line 95, style.less */
 .menu ul li a p {
   margin: 0;
 }
-/* line 97, style.less */
 .menu ul li a:hover {
   background: #c03531;
 }

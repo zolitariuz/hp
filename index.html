@@ -5,66 +5,52 @@
     <meta charset="UTF-8">
     <title>HP OTRO CAMBIO DIFERENTE</title>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+    <!--[if lt IE 9]>
+		<script src="dist/html5shiv.js"></script>
+	<![endif]-->
 
     <link rel="icon" type="image/png" href="favicon.png">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-
 </head>
 <body >
     <div class="container clearfix">
-    	<div class="header">
-
+    	<header>
             <div class="logo">
                 <a href="#">
                     <img src="images/hp_logo.png" alt="HP Indigo" />
                 </a>
             </div>
-
     		<h1>
 				<a href="#">
 					HP Indigo & IHPS
 				</a>
 			</h1>
-
 			<p class="instruccion">Presiona el botón de tu interés</p>
-
-    	</div><!-- header -->
-
+    	</header><!-- header -->
     	<div class="main clearfix">
-
     		<div class="content left">
-
     			<div class="aplicacion clearfix">
-
     				<img src="images/editorial.png" alt="" class="icono left">
-
     				<div class="info_aplicacion left">
     					<h2>Editorial</h2>
     					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Graecis hoc modicum est: Leonidas, Epaminondas, tres aliqui aut quattuor; Itaque hic ipse iam pridem est reiectus; Cur tantas regiones barbarorum pedibus obiit, tot maria transmisit? Apud imperitos tum illa dicta sunt,</p>
-
     				</div><!-- info_aplicacion -->
-
     			</div><!-- aplicacion -->
-
-    			<div class="sub_menu left">
-
+    			<div class="left" id="menu_segmentos">
 					<ul>
-						<li><a href="#">Aplicaciones</a></li>
-						<li><a href="#">Soluciones</a></li>
-						<li><a href="#">Tendencias</a></li>
-						<li><a href="#">Videos</a></li>
+						<li><a href="#" id="aplicacionesLink">Aplicaciones</a></li>
+						<li><a href="#" id="solucionesLink">Soluciones</a></li>
+						<li><a href="#" id="tendenciasLink">Tendencias</a></li>
+						<li><a href="#" id="videosLink">Videos</a></li>
 					</ul>
-
 				</div><!-- sub_menu -->
-
 				<div class="main_content left">
-                    <iframe width="601" height="338" src="//www.youtube.com/embed/8RFWwgifCqw" frameborder="0" allowfullscreen></iframe>
+                    <div id="aplicaciones">Aplicaciones</div>
+                    <div id="soluciones">Soluciones</div>
+                    <div id="tendencias">Tendencias</div>
+                    <div id="videos">Videos</div>
 				</div><!-- main_content -->
-
     		</div><!-- content -->
-
     		<div class="menu right">
     			<ul>
     				<li>
@@ -98,12 +84,12 @@
     					</a>
     				</li>
     			</ul>
-
     		</div><!-- menu -->
-
     	</div><!-- main -->
-
     </div><!--container-->
 
+    <!-- js aquí para mejorar rendimiento -->
+    <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+    <script type="text/javascript" src="js/functions.js"></script>
 </body>
 </html>

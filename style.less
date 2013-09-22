@@ -48,7 +48,7 @@ html, body {background: #fff;  -webkit-font-smoothing: antialiased; .helvetica; 
 
 .container{ width: 1024px; margin: 20px auto 0 auto; }
 
-.header{ margin: 0 0 30px 0; border-bottom: 1px solid @gris_fuente;
+header{ margin: 0 0 30px 0; border-bottom: 1px solid @gris_fuente;
 	.logo{ width: 95px; height: 95px; margin: 0 20px 0 0; display: block; float: left;
 		a{
 			img{}
@@ -73,19 +73,28 @@ html, body {background: #fff;  -webkit-font-smoothing: antialiased; .helvetica; 
 	}
 }
 
-.sub_menu{ width: 20%;
+#menu_segmentos{ width: 20%;
 	ul{ margin: 0; list-style: none;
 		li{ border-bottom: 1px solid #fff;
 			a{ width: 100%; padding: 15px 0; line-height: 60px; text-align: center; font-size: 18px; display: block; background: @azul; text-decoration: none; color: #fff;
 				&:hover{ background: @azul_obscuro; }
 			}
+			a.activo { background-color: @azul_obscuro; cursor: default; }
 		}
 	}
 }
 
 .main_content{ width: 80%;
 	iframe{ width: 600px; height: 338px; display: block; margin: 15px auto; }
+	div {
+		width: 100%;
+		height: 362px;
+		border: 1px solid #000;
+		display: block;
+	}
 }
+
+
 
 .menu{ width: 14%;
 	ul{ margin: 0; list-style: none;
