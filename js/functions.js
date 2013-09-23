@@ -1,4 +1,4 @@
-(function(){ 
+(function(){
 	// variables
 	var menuIzq = document.getElementById("menu_segmentos");
 
@@ -48,3 +48,18 @@ function cambiaTab(e){
 	id = id.replace("Link", "");
 	muestraInfo(id);
 }
+
+// RAUL
+
+$( document ).ready(function() {
+		var papa        = $('.main'),
+			menu        = $('#menu_segmentos ul'),
+			altura_papa = papa.height(),
+			altura_menu = altura_papa -  ( $('.aplicacion').height() + 40 );
+
+		menu.css('height',altura_menu);
+
+
+});
+
+

@@ -3,13 +3,65 @@
 @import url('yui_base.css');
 
 @import url('yui_fonts.css');
+@font-face {
+  font-family: 'hp_regular';
+  src: url('fonts/hpsimplified_rg-webfont.eot');
+  src: url('fonts/hpsimplified_rg-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified_rg-webfont.woff') format('woff'), url('fonts/hpsimplified_rg-webfont.ttf') format('truetype'), url('fonts/hpsimplified_rg-webfont.svg#hp_simplifieditalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hp_bold';
+  src: url('fonts/hpsimplified_bd-webfont.eot');
+  src: url('fonts/hpsimplified_bd-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified_bd-webfont.woff') format('woff'), url('fonts/hpsimplified_bd-webfont.ttf') format('truetype'), url('fonts/hpsimplified_bd-webfont.svg#hp_simplifiedbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hp_bold_italic';
+  src: url('fonts/hpsimplified_bdit-webfont.eot');
+  src: url('fonts/hpsimplified_bdit-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified_bdit-webfont.woff') format('woff'), url('fonts/hpsimplified_bdit-webfont.ttf') format('truetype'), url('fonts/hpsimplified_bdit-webfont.svg#hp_simplifiedbold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hp_italic';
+  src: url('fonts/hpsimplified_it-webfont.eot');
+  src: url('fonts/hpsimplified_it-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified_it-webfont.woff') format('woff'), url('fonts/hpsimplified_it-webfont.ttf') format('truetype'), url('fonts/hpsimplified_it-webfont.svg#hp_simplifieditalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hp_italic';
+  src: url('fonts/hpsimplified_it-webfont.eot');
+  src: url('fonts/hpsimplified_it-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified_it-webfont.woff') format('woff'), url('fonts/hpsimplified_it-webfont.ttf') format('truetype'), url('fonts/hpsimplified_it-webfont.svg#hp_simplifieditalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hp_lt';
+  src: url('fonts/hpsimplified_lt-webfont.eot');
+  src: url('fonts/hpsimplified_lt-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified_lt-webfont.woff') format('woff'), url('fonts/hpsimplified_lt-webfont.ttf') format('truetype'), url('fonts/hpsimplified_lt-webfont.svg#hp_simplifieditalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hp_lt_it';
+  src: url('fonts/hpsimplified_ltit-webfont.eot');
+  src: url('fonts/hpsimplified_ltit-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified_ltit-webfont.woff') format('woff'), url('fonts/hpsimplified_ltit-webfont.ttf') format('truetype'), url('fonts/hpsimplified_ltit-webfont.svg#hp_simplifieditalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 97, style.less */
 .position {
   position: relative;
   overflow: hidden;
 }
+/* line 98, style.less */
 .helvetica {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
+/* line 99, style.less */
 .redondas {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -20,27 +72,34 @@
   /* for old Konqueror browsers */
 
 }
+/* line 106, style.less */
 .clearfix {
   zoom: 1;
 }
+/* line 108, style.less */
 .clearfix:before {
   content: '';
   display: block;
 }
+/* line 109, style.less */
 .clearfix:after {
   content: '';
   display: table;
   clear: both;
 }
+/* line 112, style.less */
 .left {
   float: left;
 }
+/* line 113, style.less */
 .right {
   float: right;
 }
+/* line 115, style.less */
 .last {
   margin-right: 0px !important;
 }
+/* line 131, style.less */
 * {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -52,20 +111,26 @@
   /* Opera/IE 8+ */
 
 }
+/* line 136, style.less */
 html,
 body {
   background: #fff;
   -webkit-font-smoothing: antialiased;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
+/* line 138, style.less */
 .container {
-  width: 1024px;
+  width: 90%;
+  max-width: 1824px;
+  min-width: 320px;
   margin: 20px auto 0 auto;
 }
+/* line 140, style.less */
 header {
   margin: 0 0 30px 0;
   border-bottom: 1px solid #949699;
 }
+/* line 141, style.less */
 header .logo {
   width: 95px;
   height: 95px;
@@ -73,53 +138,67 @@ header .logo {
   display: block;
   float: left;
 }
+/* line 146, style.less */
 header h1 {
   height: 95px;
   margin: 0 0 0 0;
   line-height: 95px;
+  font-family: 'hp_bold';
   font-size: 40px;
 }
+/* line 147, style.less */
 header h1 a {
   color: #000;
   text-decoration: none;
 }
+/* line 150, style.less */
 header .instruccion {
   margin: 20px 0 10px 0;
   color: #949699;
   font-size: 20px;
 }
+/* line 155, style.less */
 .content {
   width: 84%;
   background: #f5f6f7;
 }
+/* line 157, style.less */
 .aplicacion {
   padding: 20px;
   border-bottom: 1px solid #949699;
 }
+/* line 158, style.less */
 .aplicacion img {
   width: 15%;
   margin: 0 5% 0 0;
   display: block;
 }
+/* line 159, style.less */
 .aplicacion .info_aplicacion {
   width: 80%;
 }
+/* line 160, style.less */
 .aplicacion .info_aplicacion h2 {
   margin: 0;
 }
+/* line 165, style.less */
 #menu_segmentos {
   width: 20%;
 }
+/* line 166, style.less */
 #menu_segmentos ul {
   margin: 0;
   list-style: none;
 }
+/* line 167, style.less */
 #menu_segmentos ul li {
+  height: 25%;
   border-bottom: 1px solid #fff;
 }
+/* line 168, style.less */
 #menu_segmentos ul li a {
   width: 100%;
-  padding: 15px 0;
+  height: 100%;
   line-height: 60px;
   text-align: center;
   font-size: 18px;
@@ -128,38 +207,51 @@ header .instruccion {
   text-decoration: none;
   color: #fff;
 }
+/* line 169, style.less */
 #menu_segmentos ul li a:hover {
   background: #2a77a2;
 }
+/* line 171, style.less */
 #menu_segmentos ul li a.activo {
   background-color: #2a77a2;
   cursor: default;
 }
+/* line 176, style.less */
 .main_content {
   width: 80%;
 }
-.main_content iframe {
-  width: 600px;
-  height: 338px;
-  display: block;
-  margin: 15px auto;
+/* line 177, style.less */
+.main_content .seccion_segmento {
+  width: 80%;
+  margin: 10% auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
-.main_content div {
+/* line 178, style.less */
+.main_content .seccion_segmento iframe {
   width: 100%;
-  height: 362px;
-  border: 1px solid #000;
-  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+/* line 182, style.less */
 .menu {
   width: 14%;
 }
+/* line 183, style.less */
 .menu ul {
   margin: 0;
   list-style: none;
 }
+/* line 184, style.less */
 .menu ul li {
   border-bottom: 1px solid #fff;
 }
+/* line 185, style.less */
 .menu ul li a {
   width: 100%;
   padding: 15px 0;
@@ -169,13 +261,17 @@ header .instruccion {
   text-align: center;
   background: #e95446;
 }
+/* line 193, style.less */
 .menu ul li a img {
-  width: 34%;
+  width: 50%;
   height: auto;
+  margin: 0 auto 10px auto;
 }
+/* line 194, style.less */
 .menu ul li a p {
   margin: 0;
 }
+/* line 196, style.less */
 .menu ul li a:hover {
   background: #c03531;
 }
