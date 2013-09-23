@@ -160,7 +160,7 @@ header .instruccion {
 }
 /* line 155, style.less */
 .content {
-  width: 84%;
+  width: 78%;
   background: #f5f6f7;
 }
 /* line 157, style.less */
@@ -249,7 +249,7 @@ header .instruccion {
 }
 /* line 182, style.less */
 .menu {
-  width: 14%;
+  width: 20%;
 }
 /* line 183, style.less */
 .menu ul {
@@ -283,4 +283,34 @@ header .instruccion {
 /* line 196, style.less */
 .menu ul li a:hover {
   background: #c03531;
+}
+/* line 204, style.less */
+.aplicacion_boton {
+  width: 19%;
+  margin: 1% 3%;
+}
+/* line 205, style.less */
+.aplicacion_boton a {
+  color: #000;
+  text-decoration: none;
+}
+/* line 206, style.less */
+.aplicacion_boton a img {
+  width: 100%;
+  height: auto;
+  margin: 0 0 10% 0;
+  padding: 10%;
+  background: #00a0dd;
+  display: block;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+/* line 214, style.less */
+.aplicacion_boton a h4 {
+  font-family: 'hp_regular';
+  font-size: 100%;
 }
