@@ -154,6 +154,7 @@ header h1 a {
 /* line 150, style.less */
 header .instruccion {
   margin: 20px 0 10px 0;
+  font-family: 'hp_regular';
   color: #949699;
   font-size: 20px;
 }
@@ -179,7 +180,14 @@ header .instruccion {
 }
 /* line 160, style.less */
 .aplicacion .info_aplicacion h2 {
+  font-family: 'hp_bold';
+  font-size: 20px;
   margin: 0;
+}
+/* line 161, style.less */
+.aplicacion .info_aplicacion p {
+  font-family: 'hp_regular';
+  font-size: 16px;
 }
 /* line 165, style.less */
 #menu_segmentos {
@@ -199,7 +207,9 @@ header .instruccion {
 #menu_segmentos ul li a {
   width: 100%;
   height: 100%;
-  line-height: 60px;
+  font-family: 'hp_bold';
+  font-size: 20px;
+  line-height: normal;
   text-align: center;
   font-size: 18px;
   display: block;
@@ -223,10 +233,9 @@ header .instruccion {
 /* line 177, style.less */
 .main_content .seccion_segmento {
   width: 80%;
-  margin: 10% auto;
+  margin: 10% auto 0 auto;
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 30px;
   height: 0;
   overflow: hidden;
 }

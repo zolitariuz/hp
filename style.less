@@ -147,7 +147,7 @@ header{ margin: 0 0 30px 0; border-bottom: 1px solid @gris_fuente;
 		a{ color: #000; text-decoration: none;}
 	}
 
-	.instruccion{ margin: 20px 0 10px 0; color: @gris_fuente; font-size: 20px; }
+	.instruccion{ margin: 20px 0 10px 0; .regular(20px); color: @gris_fuente; font-size: 20px; }
 }
 
 .main{}
@@ -157,15 +157,15 @@ header{ margin: 0 0 30px 0; border-bottom: 1px solid @gris_fuente;
 .aplicacion{ padding: 20px; border-bottom: 1px solid @gris_fuente;
 	img{ width: 15%; margin: 0 5% 0 0; display: block; }
 	.info_aplicacion{ width: 80%;
-		h2{ margin: 0; }
-		p{}
+		h2{ .bold(20px); margin: 0; }
+		p{ .regular(16px);}
 	}
 }
 
 #menu_segmentos{ width: 20%;
 	ul{ margin: 0; list-style: none;
 		li{ height: 25%; border-bottom: 1px solid #fff;
-			a{ width: 100%; height: 100%; line-height: 60px; text-align: center; font-size: 18px; display: block; background: @azul; text-decoration: none; color: #fff;
+			a{ width: 100%; height: 100%; .bold(20px); line-height: normal; text-align: center; font-size: 18px; display: block; background: @azul; text-decoration: none; color: #fff;
 				&:hover{ background: @azul_obscuro; }
 			}
 			a.activo { background-color: @azul_obscuro; cursor: default; }
@@ -174,7 +174,7 @@ header{ margin: 0 0 30px 0; border-bottom: 1px solid @gris_fuente;
 }
 
 .main_content{ width: 80%;
-	.seccion_segmento { width: 80%; margin: 10% auto; position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;
+	.seccion_segmento { width: 80%; margin: 10% auto 0 auto; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
 		iframe{ width: 100%; height: 100%;  position: absolute; top: 0; left: 0; }
 	}
 }

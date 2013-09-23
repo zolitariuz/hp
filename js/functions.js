@@ -52,12 +52,33 @@ function cambiaTab(e){
 // RAUL
 
 $( document ).ready(function() {
-		var papa        = $('.main'),
-			menu        = $('#menu_segmentos ul'),
-			altura_papa = papa.height(),
-			altura_menu = altura_papa -  ( $('.aplicacion').height() + 40 );
+
+		var papa           = $('.menu'),
+			menu           = $('#menu_segmentos ul'),
+			menu_li        = $('#menu_segmentos ul li'),
+			menu_li_a      = $('#menu_segmentos ul li a'),
+			altura_papa    = papa.height(),
+			altura_menu    = altura_papa -  ( $('.aplicacion').height() + 40 );
 
 		menu.css('height',altura_menu);
+
+		var altura_menu_li = menu_li.height() + 'px';
+		menu_li_a.css('line-height', altura_menu_li);
+
+
+		//RESIZE
+		$(window).resize(function(){
+
+			var altura_papa    = papa.height(),
+				altura_menu    = altura_papa -  ( $('.aplicacion').height() + 40 );
+				console.log(altura_papa);
+			menu.css('height',altura_menu);
+
+			altura_menu_li = menu_li.height() + 'px';
+			menu_li_a.css('line-height', altura_menu_li);
+		});
+
+
 
 
 });
