@@ -279,6 +279,8 @@ header .instruccion {
 /* line 194, style.less */
 .menu ul li a p {
   margin: 0;
+  font-family: 'hp_regular';
+  font-size: 16px;
 }
 /* line 196, style.less */
 .menu ul li a:hover {

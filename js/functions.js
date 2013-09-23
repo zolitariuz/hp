@@ -86,11 +86,13 @@ $( document ).ready(function() {
 		//RESIZE
 		$(window).resize(function(){
 
-			var altura_papa    = papa.height(),
-				altura_menu    = altura_papa -  ( $('.aplicacion').height() + 40 );
-				console.log(altura_papa);
+			altura_papa    = papa.height(),
+			altura_content = ( $('.menu li').height() * 5 ) + 5,
+			altura_menu    = altura_papa -  ( $('.aplicacion').height() + 40 );
+			console.log(altura_papa);
 
 			menu.css('height',altura_menu);
+			content.css('height',altura_content);
 
 			altura_menu_li = menu_li.height() + 'px';
 			menu_li_a.css('line-height', altura_menu_li);
