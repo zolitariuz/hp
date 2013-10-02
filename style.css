@@ -160,7 +160,7 @@ header .instruccion {
 }
 /* line 155, style.less */
 .content {
-  width: 78%;
+  width: 86%;
   background: #f5f6f7;
 }
 /* line 157, style.less */
@@ -249,7 +249,7 @@ header .instruccion {
 }
 /* line 182, style.less */
 .menu {
-  width: 20%;
+  width: 12%;
 }
 /* line 183, style.less */
 .menu ul {
@@ -272,7 +272,7 @@ header .instruccion {
 }
 /* line 193, style.less */
 .menu ul li a img {
-  width: 50%;
+  width: 30%;
   height: auto;
   margin: 0 auto 10px auto;
 }
