@@ -16,7 +16,6 @@ function resetInfo() {
 // Esconde la info y le quita el estado de activo al menu
 	var ap = document.getElementById("aplicaciones");
 	if ( ap != null ){
-		console.log('s');
 		ap.style.display = "none";
 		var apLink = document.getElementById("aplicacionesLink");
 		apLink.className = "";
@@ -68,39 +67,40 @@ function cambiaTab(e){
 
 $( document ).ready(function() {
 
-		var papa           = $('.menu'),
-			content        = $('.content'),
-			menu           = $('#menu_segmentos ul'),
-			menu_li        = $('#menu_segmentos ul li'),
-			menu_li_a      = $('#menu_segmentos ul li a'),
-			altura_content = ( $('.menu li').height() * 5 ) + 5,
-			altura_papa    = papa.height(),
-			altura_menu    = altura_papa - ( $('.aplicacion').height() + 40 );
+	var papa           		= $('.menu'),
+		content        		= $('.content'),
+		main_content 		= $('.main_content'),
+		altura_main_content = $('.main_content').height(),
+		menu           		= $('#menu_segmentos ul'),
+		menu_li        		= $('#menu_segmentos ul li'),
+		menu_li_a      		= $('#menu_segmentos ul li a'),
+		altura_content 		= ( $('.menu li').height() * 5 ) + 5,
+		altura_papa    		= papa.height(),
+		altura_menu    		= altura_papa - ( $('.descripcion').height() + 40 );
+
+	menu.css('height',altura_menu);
+	content.css('height',altura_content);
+	main_content.css('height',altura_main_content);
+
+
+	var altura_menu_li = menu_li.height() + 'px';
+	menu_li_a.css('line-height', altura_menu_li);
+
+
+	//RESIZE
+	$(window).resize(function(){
+
+		altura_papa    = papa.height(),
+		altura_content = ( $('.menu li').height() * 5 ) + 5,
+		altura_menu    = altura_papa -  ( $('.descripcion').height() + 40 );
+		console.log(altura_papa);
 
 		menu.css('height',altura_menu);
 		content.css('height',altura_content);
 
-		var altura_menu_li = menu_li.height() + 'px';
+		altura_menu_li = menu_li.height() + 'px';
 		menu_li_a.css('line-height', altura_menu_li);
-
-		//RESIZE
-		$(window).resize(function(){
-
-			altura_papa    = papa.height(),
-			altura_content = ( $('.menu li').height() * 5 ) + 5,
-			altura_menu    = altura_papa -  ( $('.aplicacion').height() + 40 );
-			console.log(altura_papa);
-
-			menu.css('height',altura_menu);
-			content.css('height',altura_content);
-
-			altura_menu_li = menu_li.height() + 'px';
-			menu_li_a.css('line-height', altura_menu_li);
-		});
-
-
-
+	});
 
 });
-
 
