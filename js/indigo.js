@@ -24,6 +24,13 @@ $( document ).ready(function() {
 		muestraInfoCasos("caso");
 		menuCasos[0].addEventListener("click", cambiaTabCasos, false);
 	}
+	
+	// PRENSAS 
+	var menuCasos = $(".panel-prensas");
+	if(menuCasos[0] != null) {
+		muestraInfoCasos("caso");
+		menuCasos[0].addEventListener("click", cambiaTabCasos, false);
+	}
 
 });
 

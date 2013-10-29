@@ -446,7 +446,9 @@ header { margin: 0 0 20px 0; border-bottom: 1px solid #949699; }
 	margin-top: -20px;
 } 
 .prensas table {
-	width:70%;
+	width:78%;
+	margin-left:2%;
+	margin-top:5%;
 	font-family:'hp_bold';
 	color:#FFF;
 	text-align:center;
@@ -474,6 +476,150 @@ header { margin: 0 0 20px 0; border-bottom: 1px solid #949699; }
 			margin-bottom:5px;
 		}
 		.prensas td a:hover { background-color:#2474A0; }
+		.prensas td a.activo { background-color:#2474A0; cursor:default; }
+		
+.menu-prensas { width: 18%; height: 360px; }
+	.menu-prensas ul { 
+		height:100%; 
+		margin: 0; 
+		list-style: none; 
+	}
+		.menu-prensas ul li { height: 18%; border-bottom: 1px solid #fff; }
+			.menu-prensas ul li a {
+				width: 100%;
+				height: 100%;
+				font-family: 'hp_bold';
+				font-size: 20px;
+				text-align: left;
+				font-size: 16px;
+				display: block;
+				background: #1aa2dc;
+				text-decoration: none;
+				color: #fff;
+				padding-top: 15px;
+				padding-left:20px;
+			}
+			.menu-prensas ul li a:hover { background: #2a77a2; }
+			.menu-prensas ul li a.activo { background-color: #2a77a2; cursor: default; }
+
+/********************
+     PRENSAS HP
+ ********************/
+ .panel-prensas { 
+	width:28%; 
+	height:100%;
+	font-family: 'hp_regular'; 
+}
+	.panel-prensas h2 { 
+		font-family: 'hp_bold';
+		font-size:32px;
+		padding-left:5%;
+		margin:15px 0 0 3%;
+	}
+	.panel-prensas h3 { 
+		width:70%;
+		font-size:20px;
+		padding-left:5%;
+		color:#00A0DD;
+		margin:0 0 20px 3%;
+		font-weight: normal;
+	}
+	.panel-prensas p {
+		width:70%; 
+		color:#5C6166;
+		margin-left:9%;
+		font-size:14px;
+		line-height:20px;
+	} 
+	.panel-prensas img {
+		width: 30%;
+		height:5%;
+		border:1px solid black;
+		display:block;	
+		margin:0 0 0 9%;
+	}
+	.panel-prensas a {
+		width:100%;
+		display:block;
+		color:#5C6166;
+		font-size:14px;
+		line-height: 20px;
+		text-decoration:none;	
+		text-align:center;
+		margin:15px auto;
+		font-weight:bold;
+	}
+		.panel-prensas a i { 
+			width:30px;
+			height:20px;
+			border:1px solid #000;
+			display:block;
+			margin-bottom: -20px;
+			margin-left:12%;
+		}
+	.panel-prensas ul { list-style:none; margin-left:0; }
+		.panel-prensas ul li a {
+			width:82%;
+			display:block;
+			color:#FFF;
+			text-decoration:none;
+			background-color:#00A0DD;	
+			height:30px;
+			margin-bottom:-12px;
+			font-size:16px;
+			line-height:30px;
+			text-align:left;
+			padding-left: 3%;
+			font-weight:normal;
+		}
+		.panel-prensas ul li a:hover { background-color:#2474A0; }
+		.panel-prensas ul li a.activo { background-color:#2474A0; cursor:default; font-weight:bold; }
+.contenido-slider {
+	width:70%;
+	border-left:5px solid #DBDCDE;	
+	margin-left: 28%;
+	margin-top:2%;
+	height:90%;
+	padding-left:2%;
+}
+	.contenido-slider .slider {
+		width:100%;
+		height:100%;
+		border: 1px solid #000;
+		margin-top:5%;
+	}
+		.contenido-slider img {
+			width:80%;
+			height:90%;	
+			border: 1px solid #000;
+			display:block;
+			margin-left:10%;
+		} 
+		.contenido-slider a {
+			width:40px;
+			height:40px;
+			border: 1px solid #000;
+			display:block;
+			margin-top:-30%;
+		}
+			.contenido-slider ul { 
+				list-style:none; 
+				text-align:center;
+				margin-left:20px;
+			}
+				.contenido-slider ul li {
+					display:inline-block;	
+				}
+					.contenido-slider ul li a {
+						width:20px;	
+						height:20px;
+						border-radius:20px;
+						border:3px solid #D1D2D4;
+						margin-left:20px;
+					}
+					.contenido-slider ul li a.activo { cursor:default; background-color:#D1D2D4; }
+		
+ 
 /* iPads (landscape) ----------- */
 @media only screen 
 and (min-width : 768px) 
