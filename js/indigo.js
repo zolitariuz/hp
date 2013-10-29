@@ -2,24 +2,33 @@
  Proyecto:             HP Indigo
  Autores:              Raúl Z y Miguel C
  Cliente:              Litobel 
- Última actualización: 18/10/2013
+ Última actualización: 23/10/2013
 *****************************************/
 
 $( document ).ready(function() {
 	// GENERAL
-	ajustarAlturaMenu();
+	jsResponsivo();
+	//ajustarAlturaMenu();
 	prevenirSalto();
 	
 	// SEGMENTOS
 	var menuIzq = document.getElementById("menu_segmentos");
-	// mostrar por default pestaña "aplicaciones"
-	muestraInfo("aplicaciones");
-	// detecta que opción del menú izquierdo fue "clickeada" y cambia la info
-	if ( menuIzq != null )
-		menuIzq.addEventListener("click", cambiaTab, false);
+	if ( menuIzq != null ) {
+		muestraInfo("aplicaciones"); // mostrar por default pestaña "aplicaciones en los segmentos"
+		menuIzq.addEventListener("click", cambiaTab, false); // detecta que opción del menú izquierdo fue "clickeada" y cambia la info
+	}
+	
+	// HISTORIAS DE EXITO 
+	var menuCasos = $(".panel-historias");
+	if(menuCasos[0] != null) {
+		muestraInfoCasos("caso");
+		menuCasos[0].addEventListener("click", cambiaTabCasos, false);
+	}
+
+});
 
 
-	/**********************
+/**********************
 	****** FUNCIONES ******
 	***********************/
 	function prevenirSalto() {
@@ -29,45 +38,6 @@ $( document ).ready(function() {
 				e.preventDefault();		
 		});	
 	} // prevenirSalto
-	function ajustarAlturaMenu() {
-	// Ajustar altura de menú derecho al cambiar tamaño de pantalla
-		var papa           		= $('.menu'),
-		content        		= $('.content'),
-		main_content 		= $('.main_content'),
-		altura_main_content = $('.main_content').height(),
-		menu           		= $('#menu_segmentos ul'),
-		menu_li        		= $('#menu_segmentos ul li'),
-		menu_li_a      		= $('#menu_segmentos ul li a'),
-		menu_vertical       = $('.menu-vertical'),
-		altura_content 		= ( $('.menu-vertical li').height() * 5 ) + 5,
-		altura_papa    		= papa.height(),
-		altura_menu    		= altura_papa - ( $('.descripcion').height() + 40 );
-
-		menu.css('height',altura_menu);
-		content.css('height',altura_content);
-		main_content.css('height',altura_main_content);
-	
-		var altura_menu_li = menu_li.height() + 'px';
-		menu_li_a.css('line-height', altura_menu_li);
-
-		$(window).resize(function(){
-			altura_papa    = papa.height(),
-			altura_content = ( $('.menu-vertical li').height() * 5 ) + 5,
-			altura_menu    = altura_papa -  ( $('.descripcion').height() + 40 );
-			console.log(altura_papa);
-	
-			menu.css('height',altura_menu);
-			content.css('height',altura_content);
-	
-			altura_menu_li = menu_li.height() + 'px';
-			menu_li_a.css('line-height', altura_menu_li);
-			
-			if(menu_vertical.css("display") == "none") 
-				content.css('height', "300px");
-		 	else 
-				content.css('height',altura_content);
-		});
-	} // ajustarAlturaMenu
 	function resetInfo() {
 	// Esconde la info y le quita el estado de activo al menu
 		var ap = document.getElementById("aplicaciones");
@@ -113,4 +83,50 @@ $( document ).ready(function() {
 		id = id.replace("Link", "");
 		muestraInfo(id);
 	} // cambiaTab
-});
+	
+	function muestraInfoCasos(id) {
+		resetInfoCasos();	
+		$(".panel-historias ul li a#" + id).addClass("activo"); 
+		if (id == "caso") 
+			$(".contenido-caso").css("display", "block");
+		else if (id == "video")
+			$(".contenido-video").css("display", "block");
+	} // muestraInfoCasos
+	function resetInfoCasos() {
+		$(".panel-historias ul li a").removeClass("activo"); 	
+		$(".contenido-caso").css("display", "none");
+		$(".contenido-video").css("display", "none");
+	} // resetInfoCasos
+	function cambiaTabCasos(e){
+	// activa y muestra la info de la opcion seleccionada
+		var id = e.target.id;
+		muestraInfoCasos(id);
+	} // cambiaTabCasos
+	
+	
+	
+	
+	function jsResponsivo() {
+	// definir funciones especificas para diferentes tamaños de pantalla usando jRespond
+	
+		var jRes = jRespond([
+			{ 
+				label: 'movil', 
+				enter: 0, 
+				exit: 481
+			}
+		]);
+		
+		// funciones específicas para cada breakpoint
+		jRes.addFunc({
+			breakpoint: 'movil',
+			enter: function() {
+				
+			},
+			exit: function() {
+				
+			}
+		});
+		
+		
+	}
