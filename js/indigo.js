@@ -26,10 +26,10 @@ $( document ).ready(function() {
 	}
 	
 	// PRENSAS 
-	var menuCasos = $(".panel-prensas");
-	if(menuCasos[0] != null) {
-		muestraInfoCasos("caso");
-		menuCasos[0].addEventListener("click", cambiaTabCasos, false);
+	var menuPrensas = $(".panel-prensas ul");
+	if(menuPrensas[0] != null) {
+		muestraInfoPrensas("prensa");
+		menuPrensas[0].addEventListener("click", cambiaTabPrensas, false);
 	}
 
 });
@@ -110,7 +110,28 @@ $( document ).ready(function() {
 		muestraInfoCasos(id);
 	} // cambiaTabCasos
 	
-	
+	function muestraInfoPrensas(id) {
+		if(id != "descargar") {
+			resetInfoPrensas();	
+			$(".panel-prensas ul li a#" + id).addClass("activo"); 
+			if (id == "prensa") 
+				$(".contenido-slider").css("display", "block");
+			else if (id == "beneficios")
+				$(".contenido-beneficios").css("display", "block");
+			else if (id == "datos")
+				$(".contenido-datos").css("display", "block");
+		}
+	} // muestraInfoPrensas
+	function resetInfoPrensas() {
+		$(".panel-prensas ul li a").removeClass("activo"); 	
+		$(".contenido-slider").css("display", "none");
+		$(".contenido-beneficios").css("display", "none");
+		$(".contenido-datos").css("display", "none");
+	} // resetInfoPrensas
+	function cambiaTabPrensas(e){
+		var id = e.target.id;
+		muestraInfoPrensas(id);
+	} // cambiaTabCasos
 	
 	
 	function jsResponsivo() {
