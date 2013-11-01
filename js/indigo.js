@@ -2,12 +2,12 @@
  Proyecto:             HP Indigo
  Autores:              Raúl Z y Miguel C
  Cliente:              Litobel 
- Última actualización: 23/10/2013
+ Última actualización: 31/10/2013
 *****************************************/
 
 $( document ).ready(function() {
 	// GENERAL
-	jsResponsivo();
+	//jsResponsivo();
 	//ajustarAlturaMenu();
 	prevenirSalto();
 	
