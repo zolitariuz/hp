@@ -100,7 +100,7 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 /********************
 		HOME
  ********************/
-.content { background: #f5f6f7; width: 86%; height: 560px; margin-bottom: 50px; }
+.content { background: #f5f6f7; width: 86%; min-height: 560px; margin-bottom: 50px; }
 
 .aplicacion_boton { width: 16%; margin: 3% 5% 0% 4%; }
 	.aplicacion_boton a { color: #000; text-decoration: none; }
@@ -259,6 +259,7 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 			.contenido-datos div ul li a:hover { background-color:#2474A0; }
 			.contenido-datos div ul li a.activo { background-color:#2474A0; cursor:default; font-weight:bold; }
 
+
 /* iPads (landscape) ----------- */
 @media only screen
 and (min-width : 768px)
@@ -281,14 +282,30 @@ and (max-width : 767px) {
 	.menu-vertical { width: 18%; }
 
 	/* HOME */
-	.content {  width: 80%; height:500px; }
+	.content { width: 80%; min-height:380px !important; }
 	.aplicacion_boton { width: 16%; margin: 8% 5% 0% 4%; }
 		.aplicacion_boton a h4 { font-size: 12px; }
+
+
+}
+
+/* iPads todo ----------- */
+@media only screen
+and (min-width : 0px)
+and (max-width : 1024px) {
+
+
+	.main-content .seccion-segmento ul li{ width: 48%; margin-left: 1%; margin-right: 1%; }
+	.historia{ width: 47%; margin-bottom: 15px; margin-top:-5px; }
+
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen
 and (max-width : 480px) {
+
+	.container{ width: 100%; }
+	.content { width: 100%; float: none; }
 	/* MAIN */
 	header .logo img { width: 75px; height: 75px; }
 	header h1 {
@@ -296,18 +313,23 @@ and (max-width : 480px) {
 		line-height: 75px;
 		font-size: 28px;
 	}
-	header .instruccion { font-size: 16px;  }
+	header .instruccion { font-size: 16px; }
 
 	.menu-vertical { display:none; }
-	.menu-horizontal { width: 100%; display: block; margin-left:1%; }
-		.menu-horizontal a { width: 18%; padding: 15px 0; color: #fff; text-decoration: none; text-align: center; background: #e95446; display:block; float:left; margin-left:1%; margin-top:-40px; }
-		.menu-horizontal a:hover { background: #c03531; }
-			.menu-horizontal a img { width: 80%; height: auto; margin: 0 auto 10px auto; }
-			.menu-horizontal a p { margin: 0; font-family: 'hp_regular'; font-size: 12px; }
+	.menu-horizontal { width: 100%; display: block; margin: 0; list-style: none; }
+		.menu-horizontal li { width: 19%; margin: 0 0.5%;; float:left; }
+		.menu-horizontal li a { width: 100%; padding: 1%; color: #fff; text-decoration: none; text-align: center; background: #e95446; display:block;  }
+		.menu-horizontal li a:hover { background: #c03531; }
+			.menu-horizontal li img { width: 80%; height: auto; margin: 0 auto 10px auto; }
+			.menu-horizontal li p { margin: 0; font-family: 'hp_regular'; font-size: 12px; }
 
 	/* HOME */
-	.content { width: 100%; height:380px; }
 	.aplicacion_boton a h4 { font-size: 10px; }
+
+	.main-content .seccion-segmento ul li{ width: 100%; }
+	.historia{ width: 90%; margin: 0 auto 1% auto; float: none; }
+
+	.historia .botones-historia li{ width: 100%; margin: 0 auto 1% auto; }
 
 }
 
