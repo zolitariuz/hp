@@ -88,12 +88,14 @@ header h1 { height: 95px; margin: 0 0 20px 0; line-height: 95px; font-family: 'h
 header h1 a { color: #000; text-decoration: none; }
 header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_regular'; color: #949699; font-size: 20px; }
 
-.subtitulo{}
-.subtitulo img{ width: 60px; height:60px; margin-left:20px; margin-top:10px; }
+.subtitulo{ border-bottom: 5px solid #BBBDC0; }
+.subtitulo img{ width: 60px; height:60px; margin: 10px 0 10px 0; }
+.subtitulo h2 { margin: 10px 0 10px 20px; font-family: 'hp_bold'; font-size: 32px; line-height:60px; }
 
 .regresa { width: 80%; height:auto; margin: 10px auto; display:block; }
 	.regresa img{ width: 16%; height: auto; border: none; float: left; }
 	.regresa p{ width: 80%; margin: 0; float: right; color: #000; }
+
 
 /********************
 		HOME
@@ -154,15 +156,21 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 /********************
   HISTORIAS DE EXITO
  ********************/
-.historias-exito h2 { font-family: 'hp_bold'; font-size: 32px; line-height:60px; margin-top:10px; margin-left:30px; }
-.historias-exito .divisor-gris { width:100%; border-bottom: 5px solid #BBBDC0; margin-top: -20px; }
-.historia { width: 30%; margin: -10px 0% 1% 2%; font-family: 'hp_regular'; }
+.historia { width: 30%; margin: 0 0% 1% 2%; border-bottom: 2px solid #00A0DD; font-family: 'hp_regular'; }
 	.historia h3 { font-weight:normal; font-size:18px; color:#5C6166; margin-bottom:3px; }
-.divisor-azul { width:100%; border-bottom: 2px solid #00A0DD; }
-		.historia ul { list-style:none; margin-left:0; }
-			.historia ul li a { width:80%; display:block; color:#FFF; text-decoration:none; background-color:#00A0DD; padding-left:10px; height:24px; margin-bottom:3px; font-size:16px; line-height:24px; }
-			.historia ul li a:hover { background-color:#2474A0; }
-			.historia ul li a.vacio { background-color:transparent; cursor: default; border: 2px solid #D1D2D4; }
+		.historia .boton_historia { list-style:none; margin-left:0; }
+			.historia .botones-historia{ list-style: none; margin: 0;}
+			.historia .botones-historia li{ width: 100%; margin: 0 0 1% 0; float: left; }
+			.historia .botones-historia li a { width: 100%; height: 100%; margin: 0; padding: 6px; text-align: center; display: block; color: #FFF; text-decoration:none; background:#00A0DD; font-size:16px; line-height:24px;
+				border-top-right-radius: 15px;
+				border-bottom-left-radius: 15px;
+				-webkit-border-top-right-radius: 15px;
+				-webkit-border-bottom-left-radius: 15px;
+				-moz-border-radius-topright: 15px;
+				-moz-border-radius-bottomleft: 15px;
+			}
+			.historia .botones-historia li a:hover { background-color:#2474A0; }
+			.historia .botones-historia li a.vacio { background-color:transparent; cursor: default; border: 2px solid #D1D2D4; }
 
 .panel-historias { width:28%; height:100%; font-family: 'hp_regular'; }
 	.panel-historias h2 { font-family: 'hp_bold'; font-size:26px; padding-left:2%; margin:15px 0 0 3%; }
@@ -188,7 +196,6 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 /********************
        PRENSAS
  ********************/
-.prensas h2 { font-family: 'hp_bold'; font-size: 32px; line-height:60px; margin-top:10px; margin-left:30px;}
 .prensas .divisor-gris { width:100%; border-bottom: 5px solid #BBBDC0; margin-top: -20px; }
 .prensas table { width:78%; margin-left:2%; margin-top:5%; font-family:'hp_bold'; color:#FFF; text-align:center; border:1px solid #FFF; }
 	.prensas table, .prensas table th, .prensas table td { border:1px solid #FFF; }
