@@ -91,6 +91,10 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 .subtitulo{}
 .subtitulo img{ width: 60px; height:60px; margin-left:20px; margin-top:10px; }
 
+.regresa { width: 80%; height:auto; margin: 10px auto; display:block; }
+	.regresa img{ width: 16%; height: auto; border: none; float: left; }
+	.regresa p{ width: 80%; margin: 0; float: right; color: #000; }
+
 /********************
 		HOME
  ********************/
@@ -163,16 +167,13 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 .panel-historias { width:28%; height:100%; font-family: 'hp_regular'; }
 	.panel-historias h2 { font-family: 'hp_bold'; font-size:26px; padding-left:2%; margin:15px 0 0 3%; }
 	.panel-historias h3 { font-size:14px; padding-left:2%; color:#00A0DD; margin:0 0 20px 3%; }
-	.panel-historias img { width: 80%; height:45%; border:1px solid black; display:block; margin:0 auto; }
-	.panel-historias a { width:100%; display:block; color:#5C6166; font-size:14px; line-height: 20px; text-decoration:none; text-align:center; margin:15px auto; font-weight:bold; }
-		a.regresa { height:auto; display:block; margin-bottom: -20px; margin-left:12%; }
-			a.regresa img{ width: 16%; height: auto; border: none; float: left; }
-			a.regresa p{ width: 50%; float: left; }
+	.panel-historias .main_image { width: 80%; height:45%; border:1px solid black; display:block; margin:0 auto; }
 
-	.panel-historias ul { list-style:none; margin-left:0; }
-		.panel-historias ul li a { width:82%; display:block; color:#FFF; text-decoration:none; background-color:#00A0DD; height:30px; margin-bottom:-12px; font-size:16px; line-height:30px; text-align:left; padding-left: 3%; font-weight:normal; }
-		.panel-historias ul li a:hover { background-color:#2474A0; }
-		.panel-historias ul li a.activo { background-color:#2474A0; cursor:default; font-weight:bold; }
+	.botones-prensa { width:80%; list-style:none; margin: auto; }
+		.botones-prensa li { }
+		.botones-prensa li a { width: 100%; padding: 5px; margin: 0 0 10px 0; display:block; color:#FFF; text-decoration:none; background:#00A0DD; font-size:16px; text-align:left; font-weight:normal; }
+		.botones-prensa li a:hover { background-color:#2474A0; }
+		.botones-prensa li a.activo { background-color:#2474A0; cursor:default; font-weight:bold; }
 
 .contenido-caso { width:70%; border-left:5px solid #DBDCDE; margin-left: 28%; margin-top:2%; height:90%; padding-left:2%; }
 	.contenido-caso p { color:#5C6166; font-family:'hp_bold'; font-size:16px; float:left; margin-top: -30px;}
