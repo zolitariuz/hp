@@ -1,7 +1,7 @@
 /****************************************
  Proyecto:             HP Indigo
  Autores:              Raúl Z y Miguel C
- Cliente:              Litobel 
+ Cliente:              Litobel
  Última actualización: 18/10/2013
 *****************************************/
 
@@ -9,7 +9,7 @@ $( document ).ready(function() {
 	// GENERAL
 	ajustarAlturaMenu();
 	prevenirSalto();
-	
+
 	// SEGMENTOS
 	var menuIzq = document.getElementById("menu_segmentos");
 	// mostrar por default pestaña "aplicaciones"
@@ -25,9 +25,9 @@ $( document ).ready(function() {
 	function prevenirSalto() {
 	// 	Prevenir salto al inicio de la página al dar click en <a href="#">
 		$("a").click(function(e) {
-			if(($(this).attr("href")) == "#") 
-				e.preventDefault();		
-		});	
+			if(($(this).attr("href")) == "#")
+				e.preventDefault();
+		});
 	} // prevenirSalto
 	function ajustarAlturaMenu() {
 	// Ajustar altura de menú derecho al cambiar tamaño de pantalla
@@ -46,7 +46,7 @@ $( document ).ready(function() {
 		menu.css('height',altura_menu);
 		content.css('height',altura_content);
 		main_content.css('height',altura_main_content);
-	
+
 		var altura_menu_li = menu_li.height() + 'px';
 		menu_li_a.css('line-height', altura_menu_li);
 
@@ -55,16 +55,16 @@ $( document ).ready(function() {
 			altura_content = ( $('.menu-vertical li').height() * 5 ) + 5,
 			altura_menu    = altura_papa -  ( $('.descripcion').height() + 40 );
 			console.log(altura_papa);
-	
+
 			menu.css('height',altura_menu);
 			content.css('height',altura_content);
-	
+
 			altura_menu_li = menu_li.height() + 'px';
 			menu_li_a.css('line-height', altura_menu_li);
-			
-			if(menu_vertical.css("display") == "none") 
+
+			if(menu_vertical.css("display") == "none")
 				content.css('height', "300px");
-		 	else 
+		 	else
 				content.css('height',altura_content);
 		});
 	} // ajustarAlturaMenu

@@ -102,7 +102,7 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
  ********************/
 .content { background: #f5f6f7; width: 86%; min-height: 560px; margin-bottom: 50px; }
 
-.aplicacion_boton { width: 16%; margin: 3% 5% 0% 4%; }
+.aplicacion_boton { width: 16%; margin: 3% 5% 3% 4%; }
 	.aplicacion_boton a { color: #000; text-decoration: none; }
 	.aplicacion_boton a h4 { font-family: 'hp_regular'; font-size: 16px; }
 		.aplicacion_boton a img { width: 100%; height: auto; margin: 0 0 10% 0; padding: 10%; background: #00a0dd; display: block;
