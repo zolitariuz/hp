@@ -290,6 +290,9 @@ and (max-width : 1024px) {
 /* iPads (portrait) ----------- */
 @media only screen
 and (max-width : 767px) {
+
+	header h1{ font-size: 30px; }
+
 	/* MAIN */
 	.menu-vertical { width: 18%; }
 
@@ -301,21 +304,26 @@ and (max-width : 767px) {
 
 }
 
+/*  ----------- */
+@media only screen
+and (max-width : 620px) {
+
+	.menu-vertical ul li a p { font-size: 14px; }
+
+}
+
 
 /* Smartphones (landscape) ----------- */
 @media only screen
 and (max-width : 480px) {
 
+
 	.container{ width: 100%; }
 	.content { width: 100%; float: none; }
 	/* MAIN */
 	header .logo img { width: 75px; height: 75px; }
-	header h1 {
-		height: 75px;
-		line-height: 75px;
-		font-size: 28px;
-	}
-	header .instruccion { font-size: 16px; }
+	header h1 { height: 75px; line-height: 75px; font-size: 20px; }
+	header .instruccion { font-size: 20px; }
 
 	.menu-vertical { display:none; }
 	.menu-horizontal { width: 100%; display: block; margin: 0; list-style: none; }
