@@ -1,7 +1,7 @@
 /****************************************
  Proyecto:             HP Indigo
  Autores:              Raúl Z y Miguel C
- Cliente:              Litobel 
+ Cliente:              Litobel
  Última actualización: 31/10/2013
 *****************************************/
 
@@ -10,22 +10,22 @@ $( document ).ready(function() {
 	//jsResponsivo();
 	//ajustarAlturaMenu();
 	prevenirSalto();
-	
+
 	// SEGMENTOS
 	var menuIzq = document.getElementById("menu_segmentos");
 	if ( menuIzq != null ) {
-		muestraInfo("aplicaciones"); // mostrar por default pestaña "aplicaciones en los segmentos"
+		muestraInfo("tendencias"); // mostrar por default pestaña "aplicaciones en los segmentos"
 		menuIzq.addEventListener("click", cambiaTab, false); // detecta que opción del menú izquierdo fue "clickeada" y cambia la info
 	}
-	
-	// HISTORIAS DE EXITO 
+
+	// HISTORIAS DE EXITO
 	var menuCasos = $(".panel-historias");
 	if(menuCasos[0] != null) {
 		muestraInfoCasos("caso");
 		menuCasos[0].addEventListener("click", cambiaTabCasos, false);
 	}
-	
-	// PRENSAS 
+
+	// PRENSAS
 	var menuPrensas = $(".panel-prensas ul");
 	if(menuPrensas[0] != null) {
 		muestraInfoPrensas("prensa");
@@ -35,15 +35,15 @@ $( document ).ready(function() {
 });
 
 
-/**********************
+	/**********************
 	****** FUNCIONES ******
 	***********************/
 	function prevenirSalto() {
 	// 	Prevenir salto al inicio de la página al dar click en <a href="#">
 		$("a").click(function(e) {
-			if(($(this).attr("href")) == "#") 
-				e.preventDefault();		
-		});	
+			if(($(this).attr("href")) == "#")
+				e.preventDefault();
+		});
 	} // prevenirSalto
 	function resetInfo() {
 	// Esconde la info y le quita el estado de activo al menu
@@ -90,17 +90,17 @@ $( document ).ready(function() {
 		id = id.replace("Link", "");
 		muestraInfo(id);
 	} // cambiaTab
-	
+
 	function muestraInfoCasos(id) {
-		resetInfoCasos();	
-		$(".panel-historias ul li a#" + id).addClass("activo"); 
-		if (id == "caso") 
+		resetInfoCasos();
+		$(".panel-historias ul li a#" + id).addClass("activo");
+		if (id == "caso")
 			$(".contenido-caso").css("display", "block");
 		else if (id == "video")
 			$(".contenido-video").css("display", "block");
 	} // muestraInfoCasos
 	function resetInfoCasos() {
-		$(".panel-historias ul li a").removeClass("activo"); 	
+		$(".panel-historias ul li a").removeClass("activo");
 		$(".contenido-caso").css("display", "none");
 		$(".contenido-video").css("display", "none");
 	} // resetInfoCasos
@@ -109,12 +109,12 @@ $( document ).ready(function() {
 		var id = e.target.id;
 		muestraInfoCasos(id);
 	} // cambiaTabCasos
-	
+
 	function muestraInfoPrensas(id) {
 		if(id != "descargar") {
-			resetInfoPrensas();	
-			$(".panel-prensas ul li a#" + id).addClass("activo"); 
-			if (id == "prensa") 
+			resetInfoPrensas();
+			$(".panel-prensas ul li a#" + id).addClass("activo");
+			if (id == "prensa")
 				$(".contenido-slider").css("display", "block");
 			else if (id == "beneficios")
 				$(".contenido-beneficios").css("display", "block");
@@ -123,7 +123,7 @@ $( document ).ready(function() {
 		}
 	} // muestraInfoPrensas
 	function resetInfoPrensas() {
-		$(".panel-prensas ul li a").removeClass("activo"); 	
+		$(".panel-prensas ul li a").removeClass("activo");
 		$(".contenido-slider").css("display", "none");
 		$(".contenido-beneficios").css("display", "none");
 		$(".contenido-datos").css("display", "none");
@@ -168,29 +168,28 @@ $( document ).ready(function() {
 			$(".slider img").removeClass("activo");
 		}	
 	}
-	
-	
+
 	function jsResponsivo() {
 	// definir funciones especificas para diferentes tamaños de pantalla usando jRespond
-	
+
 		var jRes = jRespond([
-			{ 
-				label: 'movil', 
-				enter: 0, 
+			{
+				label: 'movil',
+				enter: 0,
 				exit: 481
 			}
 		]);
-		
+
 		// funciones específicas para cada breakpoint
 		jRes.addFunc({
 			breakpoint: 'movil',
 			enter: function() {
-				
+
 			},
 			exit: function() {
-				
+
 			}
 		});
-		
-		
+
+
 	}
