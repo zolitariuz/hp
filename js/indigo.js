@@ -133,6 +133,42 @@ $( document ).ready(function() {
 		muestraInfoPrensas(id);
 	} // cambiaTabCasos
 	
+	function slider() {
+		$(".slider .control-slider a").click(function(){
+			var id = $(this).attr("id");
+			id = id.replace("control-", "");
+			limpiaControl();
+			$(this).addClass("activo");
+			limpiaImg();
+			$(".slider img#" + id).addClass("activo");
+		});
+		$(".slider .flecha-der").click(function() {
+			var activo = $(".slider img.activo").attr("id");
+			limpiaImg();
+			limpiaControl();
+			activo = parseInt(activo) + 1;
+			if(activo > 4) activo = 1;
+			$(".slider img#" + activo).addClass("activo");
+			$(".slider .control-slider a#control-" + activo).addClass("activo");
+		});
+		$(".slider .flecha-izq").click(function() {
+			var activo = $(".slider img.activo").attr("id");
+			limpiaImg();
+			limpiaControl();
+			activo = parseInt(activo) - 1;
+			if(activo < 1) activo = 4;
+			$(".slider img#" + activo).addClass("activo");
+			$(".slider .control-slider a#control-" + activo).addClass("activo");
+		});
+		
+		function limpiaControl() {
+			$(".slider .control-slider a").removeClass("activo");
+		}
+		function limpiaImg() {
+			$(".slider img").removeClass("activo");
+		}	
+	}
+	
 	
 	function jsResponsivo() {
 	// definir funciones especificas para diferentes tamaños de pantalla usando jRespond
