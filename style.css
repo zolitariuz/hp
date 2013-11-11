@@ -345,6 +345,16 @@ and (max-width : 480px) {
 
 	.prensas table{ width: 96%; }
 
+	/*MENU SEGMENTOS*/
+	#menu_segmentos{ width: 100%; }
+	#menu_segmentos ul{}
+	#menu_segmentos ul li{ width: 25%; float: left; }
+	#menu_segmentos ul li a{ font-size: 14px; }
+
+	/*MAIN*/
+	.main-content{ width: 100%; }
+
+
 }
 
 /* Smartphones (portrait) ----------- */
