@@ -317,7 +317,7 @@ and (max-width : 480px) {
 
 
 	.container{ width: 100%; }
-	.content { width: 100%; float: none; }
+	.content { width: 100%; min-height: 0px !important; margin-bottom: 15px; float: none; }
 	/* MAIN */
 	header .logo img { width: 75px; height: 75px; }
 	header h1 { height: 75px; line-height: 75px; font-size: 20px; }
@@ -345,14 +345,44 @@ and (max-width : 480px) {
 
 	.prensas table{ width: 96%; }
 
+	/* PRENSA SINGLE */
+	.panel-historias { width: 100%; float: none; }
+	.panel-historias h2{ padding-top: 20px; }
+	.panel-historias .main_image{ width: 70%; height: auto; margin: auto; display: block; }
+
+	.regresa{ width: 32%; }
+	.regresa p{ font-size: 11px; }
+
+	.botones-prensa{ width: 90%; margin: 0 auto 10px auto; background:#00A0DD; }
+	.botones-prensa li{ width: 25%; float: left; margin: 0;}
+	.botones-prensa li a{ height: 100%; height: 50px; margin: 0; padding: 10px 10px 0 10px; font-size: 14px; text-align: center;  display: block; }
+
+	.bloque-contenido{ width: 100%; float: none; margin: 5px auto; }
+
+	.link-prensa{ width: 100%; margin:  0 auto; }
+	.link-prensa p{ width: 100% !important; margin: 0 !important; }
+	.link-prensa a{ width: 100% !important; margin: 0 !important; }
+
+	.contenido-caso{ width: 100%; margin: auto; padding-bottom: 10px; float: left;}
+	.contenido-video{ width: 100%; margin: auto; float: left;}
+
+
 	/*MENU SEGMENTOS*/
-	#menu_segmentos{ width: 100%; }
+	#menu_segmentos{ width: 100%; height: auto; }
 	#menu_segmentos ul{}
 	#menu_segmentos ul li{ width: 25%; float: left; }
 	#menu_segmentos ul li a{ font-size: 14px; }
 
 	/*MAIN*/
 	.main-content{ width: 100%; }
+
+	.seccion-segmento ul li a{ height: 60px; }
+
+	.descripcion img { width: 20%; margin: 0 auto; float: none; }
+	.descripcion .info_aplicacion{ width: 100%; float: none; }
+	.descripcion .info_aplicacion h2 { font-size: 16px; }
+	.descripcion .info_aplicacion p { font-size: 14px; }
+
 
 
 }
