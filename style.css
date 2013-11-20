@@ -243,6 +243,7 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 			.contenido-beneficios div h4 { font-size:18px; margin-bottom:20px; }
 			.contenido-beneficios div p { font-size:15px; color:#5C6166; }
 	.contenido-beneficios div:last-child { width:64%; height:90%; }
+		.contenido-beneficios div p + ul { list-style:outside; padding-left:10px;  }
 		.contenido-beneficios div ul { list-style:none; }
 			.contenido-beneficios div ul li { width:100%; }
 				.contenido-beneficios div ul li i { color:#D1D2D4; font-style:normal; font-family:'hp_bold'; font-weight:bold; font-size:48px; margin-top:-8px; }
