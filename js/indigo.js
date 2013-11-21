@@ -92,17 +92,22 @@ $( document ).ready(function() {
 	} // cambiaTab
 
 	function muestraInfoCasos(id) {
-		resetInfoCasos();
-		$(".panel-historias ul li a#" + id).addClass("activo");
+		if(id != "pdf")  {
+			resetInfoCasos();
+			$(".panel-historias ul li a#" + id).addClass("activo");
+		}
 		if (id == "caso")
 			$(".contenido-caso").css("display", "block");
 		else if (id == "video")
 			$(".contenido-video").css("display", "block");
+		else if (id == "testimonial")
+			$(".contenido-testimonial").css("display", "block");
 	} // muestraInfoCasos
 	function resetInfoCasos() {
 		$(".panel-historias ul li a").removeClass("activo");
 		$(".contenido-caso").css("display", "none");
 		$(".contenido-video").css("display", "none");
+		$(".contenido-testimonial").css("display", "none");
 	} // resetInfoCasos
 	function cambiaTabCasos(e){
 	// activa y muestra la info de la opcion seleccionada
@@ -134,6 +139,7 @@ $( document ).ready(function() {
 	} // cambiaTabCasos
 	
 	function slider() {
+		var numImg = $(".slider .control-slider li").length;
 		$(".slider .control-slider a").click(function(){
 			var id = $(this).attr("id");
 			id = id.replace("control-", "");
@@ -147,7 +153,7 @@ $( document ).ready(function() {
 			limpiaImg();
 			limpiaControl();
 			activo = parseInt(activo) + 1;
-			if(activo > 4) activo = 1;
+			if(activo > numImg) activo = 1;
 			$(".slider img#" + activo).addClass("activo");
 			$(".slider .control-slider a#control-" + activo).addClass("activo");
 		});
@@ -156,7 +162,7 @@ $( document ).ready(function() {
 			limpiaImg();
 			limpiaControl();
 			activo = parseInt(activo) - 1;
-			if(activo < 1) activo = 4;
+			if(activo < 1) activo = numImg;
 			$(".slider img#" + activo).addClass("activo");
 			$(".slider .control-slider a#control-" + activo).addClass("activo");
 		});
