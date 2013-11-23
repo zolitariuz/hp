@@ -92,7 +92,7 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 .subtitulo img{ width: 60px; height:60px; margin: 10px; }
 .subtitulo h2 { margin: 10px 0 10px 20px; font-family: 'hp_bold'; font-size: 32px; line-height:60px; }
 
-.regresa { width: 80%; height:auto; margin: 10px auto; display:block; }
+.regresa { width: 90%; height:auto; margin: 10px 0; display:block; }
 	.regresa img{ width: 16%; height: auto; border: none; float: left; }
 	.regresa p{ width: 80%; margin: 0; float: right; color: #000; }
 
@@ -173,14 +173,15 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 			.historia .botones-historia li a:hover { background-color:#2474A0; }
 			.historia .botones-historia li a.vacio { background-color:transparent; cursor: default; border: 2px solid #D1D2D4; }
 
-.panel-historias { width:28%; height:100%; font-family: 'hp_regular'; border-right:5px solid #DBDCDE;}
-	.panel-historias h2 { font-family: 'hp_bold'; font-size:26px; padding-left:2%; margin:15px 0 0 3%; }
-	.panel-historias h3 { font-size:14px; padding-left:2%; color:#00A0DD; margin:0 0 20px 3%; }
-	.panel-historias .main_image { width: 80%; height:45%; display:block; margin:0 auto; }
+.panel-historias { width:28%; height:100%; border-right: 3px solid #f5f6f7; font-family: 'hp_regular'; }
+	.panel-historias h2{ width: 90%; margin: 0; font-family: 'hp_bold'; font-size: 32px; }
+	.panel-historias h3{ width: 90%; margin:0 0 20px 0; font:20px 'hp_regular'; color:#00A0DD; }
+	.panel-historias p{ margin: 0; }
+	.panel-historias .main_image { width: 90%; height: auto; display:block; margin:0 0 1em 0; }
 
-	.botones-prensa { width:80%; list-style:none; margin: auto; }
-		.botones-prensa li { }
-		.botones-prensa li a { width: 100%; padding: 5px; margin: 0 0 10px 0; display:block; color:#FFF; text-decoration:none; background:#00A0DD; font-size:16px; text-align:left; font-weight:normal; }
+	.botones-prensa { width: 90%; list-style:none; margin: 0 0 1em 0; }
+		.botones-prensa li { margin-bottom: 2px; }
+		.botones-prensa li a { display: block; width: 100%; height: 40px; margin: 0; padding-left: 5%; color: #FFF; text-decoration: none; background: #00A0DD; font-size: 16px; line-height: 40px; text-align: left; font-weight: normal; }
 		.botones-prensa li a:hover { background-color:#2474A0; }
 		.botones-prensa li a.activo { background-color:#2474A0; cursor:default; font-weight:bold; }
 
@@ -226,17 +227,18 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
      PRENSAS HP
  ********************/
  .panel-prensas { width:28%; height:100%; font-family: 'hp_regular'; }
-	.panel-prensas h2 { font-family: 'hp_bold'; font-size:32px; padding-left:5%; margin:15px 0 0 3%; }
-	.panel-prensas h3 { width:70%; font-size:20px; padding-left:5%; color:#00A0DD; margin:0 0 20px 3%; font-weight: normal; }
-	.panel-prensas p { width:70%; color:#5C6166; margin-left:9%; font-size:14px; line-height:20px; }
-	.panel-prensas img { width: 30%; height:5%; border:1px solid black; display:block; margin:0 0 0 9%; }
+	.panel-prensas h2 { width: 90%; margin:0; font-family: 'hp_bold'; font-size:32px;  }
+	.panel-prensas h3 { width: 90%; margin:0 0 20px 0; font-size:20px;  color:#00A0DD; font-weight: normal; }
+	.panel-prensas p { width: 90%; color:#5C6166; margin:0 0 1em 0; font-size:14px; line-height:20px; }
+	.panel-prensas img { width: 30%; height:5%; margin:0 0 1em 0; border:1px solid black; display:block; }
 	.panel-prensas a { width:100%; display:block; color:#5C6166; font-size:14px; line-height: 20px; text-decoration:none; text-align:center; margin:15px auto; font-weight:bold; }
 		.panel-prensas a i { width:30px; height:20px; border:1px solid #000; display:block; margin-bottom: -20px; margin-left:12%; }
-	.panel-prensas ul { list-style:none; margin-left:0; }
-		.panel-prensas ul li a { width:82%; display:block; color:#FFF; text-decoration:none; background-color:#00A0DD; height:30px; margin-bottom:-12px; font-size:16px; line-height:30px; text-align:left; padding-left: 3%; font-weight:normal; }
-		.panel-prensas ul li a:hover { background-color:#2474A0; }
-		.panel-prensas ul li a.activo { background-color:#2474A0; cursor:default; font-weight:bold; }
-.contenido-slider { width:70%; border-left:5px solid #DBDCDE; margin-left: 28%; margin-top:2%; padding-left:2%; }
+	.panel-prensas ul { width: 90%; margin:0; list-style:none; }
+		.panel-prensas ul li{ margin-bottom: 2px; }
+			.panel-prensas ul li a { display:block; width:100%; height:40px; margin: 0; padding-left: 5%; color:#FFF; text-decoration:none; background:#00A0DD; font-size:16px; line-height:40px; text-align:left; font-weight:normal; }
+			.panel-prensas ul li a:hover { background-color:#2474A0; }
+			.panel-prensas ul li a.activo { background-color:#2474A0; cursor:default; font-weight:bold; }
+.contenido-slider { width:70%; margin: 0 0 0 28%; padding-left:2%; border-left: 3px solid #f5f6f7; }
 	.contenido-slider .slider { width:100%; }
 		.contenido-slider img { width:80%; display:none; margin-left:10%; }
 		.contenido-slider img.activo { display:block; }
@@ -311,13 +313,39 @@ and (max-width : 767px) {
 	.aplicacion_boton { width: 16%; margin: 8% 5% 0% 4%; }
 		.aplicacion_boton a h4 { font-size: 12px; }
 
+	.bloque-contenido{ width: 100%; float: none; margin: 5px auto; }
+
 }
 
 /*  ----------- */
 @media only screen
 and (max-width : 620px) {
 
+	.container{ width: 100%; }
+	.content { width: 100%; min-height: 0px !important; margin-bottom: 15px; float: none; }
+
 	.menu-vertical ul li a p { font-size: 14px; }
+	.bloque-contenido{ width: 100%; }
+
+	/* PRENSA SINGLE */
+	.panel-historias { width: 90%; margin: 0 auto; float: none; border: none; }
+	.panel-historias h2{ width: 100%; }
+	.panel-historias h3{ width: 100%; }
+	.panel-historias p{ width: 100%; }
+	.panel-historias .regresa{ width: 100%; }
+	.panel-historias .regresa img{ width: 10%;  }
+	.panel-historias .regresa p{ width: 88%; font-size: 15px; line-height: 40px; }
+
+	.panel-historias .botones-prensa{ width: 100%; }
+	.panel-historias .main_image{ width: 70%; height: auto; margin: auto; display: block; }
+
+	.botones-prensa{ width: 90%; margin: 0 auto 10px auto; }
+	.botones-prensa li{ width: 23%; height: 100%; margin: 0 1%; float: left; }
+	.botones-prensa li a{ display: block; height: 100%; margin: 0; padding: 10px; line-height: normal; font-size: 14px; text-align: center; }
+
+	.contenido-caso{ width: 90%; margin: auto; padding-bottom: 10px; float: none;}
+	.contenido-testimonial{ width: 90%; }
+	.contenido-video{ width: 90%; margin: auto; float: left;}
 
 }
 
@@ -326,9 +354,6 @@ and (max-width : 620px) {
 @media only screen
 and (max-width : 480px) {
 
-
-	.container{ width: 100%; }
-	.content { width: 100%; min-height: 0px !important; margin-bottom: 15px; float: none; }
 	/* MAIN */
 	header .logo img { width: 75px; height: 75px; }
 	header h1 { height: 75px; line-height: 75px; font-size: 20px; }
@@ -354,30 +379,16 @@ and (max-width : 480px) {
 	.menu-prensas { width: 100%; }
 		.menu-prensas ul li{ width: 28%; float: left; border: none; }
 
+	.panel-historias .regresa img{   }
+	.panel-historias .regresa p{ line-height: 30px; }
+
 	.prensas table{ width: 96%; }
 
-	/* PRENSA SINGLE */
-	.panel-historias { width: 100%; float: none; }
-	.panel-historias h2{ padding-top: 20px; }
-	.panel-historias .main_image{ width: 70%; height: auto; margin: auto; display: block; }
-
-	.regresa{ width: 32%; }
-	.regresa p{ font-size: 11px; }
-
-	.botones-prensa{ width: 90%; margin: 0 auto 10px auto; background:#00A0DD; }
-	.botones-prensa li{ width: 25%; float: left; margin: 0;}
-	.botones-prensa li a{ height: 100%; height: 50px; margin: 0; padding: 10px 10px 0 10px; font-size: 14px; text-align: center;  display: block; }
-
-	.bloque-contenido{ width: 100%; float: none; margin: 5px auto; }
+	.botones-prensa li a{ padding: 5px; font-size: 12px;  }
 
 	.link-prensa{ width: 100%; margin:  0 auto; }
 	.link-prensa p{ width: 100% !important; margin: 0 !important; }
 	.link-prensa a{ width: 100% !important; margin: 0 !important; }
-
-	.contenido-caso{ width: 100%; margin: auto; padding-bottom: 10px; float: left;}
-	.contenido-video{ width: 100%; margin: auto; float: left;}
-		
-
 
 	/*MENU SEGMENTOS*/
 	#menu_segmentos{ width: 100%; height: auto; }
@@ -395,14 +406,12 @@ and (max-width : 480px) {
 	.descripcion .info_aplicacion h2 { font-size: 16px; }
 	.descripcion .info_aplicacion p { font-size: 14px; }
 
-
-
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen
 and (max-width : 320px) {
 
-
+	.panel-historias .regresa p{ line-height: 25px; }
 
 }
