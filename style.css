@@ -325,7 +325,7 @@ and (max-width : 767px) {
 	.panel-prensas p{ width: 100%; }
 
 	.panel-prensas .botones-prensa{ width: 100%; margin: 0 auto 10px auto; }
-	.panel-prensas .botones-prensa li{ width: 23%; height: 100%; margin: 0 1%; float: left; }
+	.panel-prensas .botones-prensa li{ width: 48%; height: 100%; margin: 0 1% 1% 0; float: left; }
 	.panel-prensas .botones-prensa li a{ display: block; height: 100%; margin: 0; padding: 10px; line-height: normal; font-size: 14px; text-align: center; }
 
 
@@ -344,7 +344,7 @@ and (max-width : 620px) {
 	.bloque-contenido{ width: 100%; }
 
 	/* HISTORIA SINGLE */
-	.panel-historias { width: 90%; margin: 0 auto; float: none; border: none; }
+	.panel-historias { width: 100%; margin: 0 auto; float: none; border: none; }
 	.panel-historias h2{ width: 100%; }
 	.panel-historias h3{ width: 100%; }
 	.panel-historias p{ width: 100%; }
@@ -356,8 +356,8 @@ and (max-width : 620px) {
 	.panel-historias .main_image{ width: 70%; height: auto; margin: auto; display: block; }
 
 	.botones-prensa{ width: 90%; margin: 0 auto 10px auto; }
-	.botones-prensa li{ width: 23%; height: 100%; margin: 0 1%; float: left; }
-	.botones-prensa li a{ display: block; height: 100%; margin: 0; padding: 10px; line-height: normal; font-size: 14px; text-align: center; }
+	.botones-prensa li{ width: 48%; height: 100%; margin: 0 1% 1% 0; float: left; }
+	.botones-prensa li a{ display: block; height: 100%; margin: 0; padding: 10px; line-height: normal; text-align: center; }
 
 	.contenido-caso{ width: 90%; margin: auto; padding-bottom: 10px; float: none;}
 	.contenido-testimonial{ width: 90%; }
@@ -404,14 +404,14 @@ and (max-width : 480px) {
 	.subtitulo{ margin-bottom: 1em; float: none; }
 	.menu-prensas { width: 100%; float: none; }
 	.menu-prensas ul li{ width: 23%; height: 70px; margin: 0 1% 1em 1%; float: left; border: none;  }
-	.menu-prensas ul li a{ font-size: 12px; }
+	.menu-prensas ul li a{  }
 
 	.panel-historias .regresa img{   }
 	.panel-historias .regresa p{ line-height: 30px; }
 
 	.prensas table{ width: 100%; margin-left: 0; float: none; }
 
-	.botones-prensa li a{ padding: 5px; font-size: 12px;  }
+	.botones-prensa li a{ padding: 5px; }
 
 	.link-prensa{ width: 100%; margin:  0 auto; }
 	.link-prensa p{ width: 100% !important; margin: 0 !important; }
