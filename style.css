@@ -290,6 +290,13 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
      ADICIONALES
  ********************/
 
+.menu-adicionales { width: 18%; }
+	.menu-adicionales ul { height:100%; margin: 0; list-style: none; }
+		.menu-adicionales ul li {border-bottom: 1px solid #fff; }
+			.menu-adicionales ul li a { width: 100%; height: 100%; padding: 10%; font-family: 'hp_bold'; font-size: 20px; text-align: left; font-size: 16px; display: block; background: #1aa2dc; text-decoration: none; color: #fff; line-height: normal; }
+			.menu-adicionales ul li a:hover { background: #2a77a2; }
+			.menu-adicionales ul li a.activo { background-color: #2a77a2; cursor: default; }
+
 .seccion-segmento .contenido-slider { width: 100%; margin: 0; padding-left:2%; border-left: 3px solid #f5f6f7; }
 	.seccion-segmento .contenido-slider .slider { width:100%; }
 		.seccion-segmento .contenido-slider img { width:80%; display:none; margin-left:10%; }
@@ -300,6 +307,11 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 					.seccion-segmento .contenido-slider ul li a { width:20px !important; height:20px !important; border-radius:20px !important; border:3px solid #D1D2D4 !important; margin-left:20px !important; }
 					.seccion-segmento .contenido-slider ul li a.activo { cursor:default !important; background-color:#D1D2D4 !important; }
 
+.botones-adicionales { width: 90%; list-style:none; margin: 0 0 1em 0; }
+		.botones-adicionales li { margin-bottom: 2px; }
+		.botones-adicionales li a { display: block; width: 100%; height: 40px; margin: 0; padding-left: 5%; color: #FFF; text-decoration: none; background: #00A0DD; font-size: 16px; line-height: 40px; text-align: left; font-weight: normal; }
+		.botones-adicionales li a:hover { background-color:#2474A0; }
+		.botones-adicionales li a.activo { background-color:#2474A0; cursor:default; font-weight:bold; }
 
 
 
@@ -342,6 +354,22 @@ and (max-width : 1024px) {
 
 	.contenido-slider{ width: 100%; margin: 0; padding: 0; float: none; border: none; }
 
+	.menu-adicionales { width: 100%; }
+	.menu-adicionales .botones-adicionales { width: 100%; height:100%; margin: 0; list-style: none; }
+		.menu-adicionales .botones-adicionales li { width: 48%; height: 100%; margin: 0 1% 1% 1% !important; border-bottom: 1px solid #fff; float: left;  }
+			.menu-adicionales .botones-adicionales li a { display: block; width: 100%; height: 100%; margin: 0; padding: 5%; line-height: normal; font: 20px 'hp_bold';  background: #1aa2dc; color: #fff; text-decoration: none; line-height: normal; text-align: center;}
+			.menu-adicionales .botones-adicionales li a:hover { background: #2a77a2; }
+			.menu-adicionales .botones-adicionales li a.activo { background-color: #2a77a2; cursor: default; }
+
+
+	.main-content.adicionales{ width: 100%;  }
+	.main-content.adicionales .seccion-segmento{ width: 100%;  }
+	.main-content.adicionales .seccion-segmento .contenido-slider{ padding: 0; border: none; }
+
+	.main-content.adicionales .seccion-segmento .contenido-slider ul li { width: auto; margin: 0; display:inline-block !important; }
+					.main-content.adicionales .seccion-segmento .contenido-slider ul li a { width:20px !important; height:20px !important; border-radius:20px !important; border:3px solid #D1D2D4 !important; margin-left:20px !important; }
+					.main-content.adicionales .seccion-segmento .contenido-slider ul li a.activo { cursor:default !important; background-color:#D1D2D4 !important; }
+
 }
 
 /* iPads (portrait) ----------- */
@@ -359,6 +387,8 @@ and (max-width : 767px) {
 		.aplicacion_boton a h4 { font-size: 12px; }
 
 	.bloque-contenido{ width: 100%; float: none; margin: 5px auto; }
+
+	.menu-adicionales .botones-adicionales li a{ font-size: 16px; }
 }
 
 /*  ----------- */
@@ -391,7 +421,6 @@ and (max-width : 620px) {
 	.botones-historia li{ width: 48%; height: 100%; margin: 0 1% 1% 1%; float: left; }
 	.botones-historia li a{ display: block; height: 100%; margin: 0; padding: 10px; line-height: normal; text-align: center; }
 
-
 	.contenido-caso{ width: 90%; margin: auto; padding-bottom: 10px; float: none;}
 	.contenido-testimonial{ width: 90%; }
 	.contenido-video{ width: 90%; margin: auto; float: left;}
@@ -411,6 +440,8 @@ and (max-width : 620px) {
 	#menu_segmentos ul li{ width: 48%; height: auto; margin: 0 1% 1% 1%; float: left; }
 	#menu_segmentos ul li a{ display: block; height: 100%; margin: 0; padding: 10px; line-height: normal; font-size: 14px; text-align: center !important; }
 
+
+	.menu-adicionales .botones-adicionales li a{ font-size: 14px; }
 }
 
 
@@ -468,6 +499,8 @@ and (max-width : 480px) {
 	.descripcion .info_aplicacion{ width: 100%; float: none; }
 	.descripcion .info_aplicacion h2 { font-size: 16px; }
 	.descripcion .info_aplicacion p { font-size: 14px; }
+
+	.menu-adicionales .botones-adicionales li a{ font-size: 12px; }
 
 }
 
