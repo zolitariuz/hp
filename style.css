@@ -331,6 +331,7 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
         .lightbox-media a { width:50px; height:50px; display:block; float:right; margin-top: -40px;}
             .lightbox-media a img { width:100%; height:auto;}
         .lightbox-container .lightbox-media video { width:100%; height:auto;}
+        .lightbox-container .frame-video { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
         .lightbox-container .lightbox-media iframe { width:100%; height:auto; }
         .lightbox-container .lightbox-media h2 { font-size:36px; color:#FFF; font-family: 'hp_regular'; margin-top:10px; margin-bottom:0; line-height:36px; padding-top:20px; }
 
