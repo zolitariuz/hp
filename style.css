@@ -267,9 +267,9 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 
 .contenido-beneficios { width:70%; border-left:5px solid #DBDCDE; margin-left: 28%; height:90%; padding-left:2%; margin-top:2%; font-family:'hp_regular'; }
 	.contenido-beneficios div:first-child { width:35%; height:90%; }
-		.contenido-beneficios div img { width:80%; height:auto; margin-left:10%; }
+		.contenido-beneficios div img { width:50%; height:auto; margin:0 auto 20px; display: block; }
 			.contenido-beneficios div h4,
-			.contenido-beneficios div p { width:80%; margin-left:10%;}
+			.contenido-beneficios div p { width:80%; margin:0 auto;}
 			.contenido-beneficios div h4 { font-size:18px; margin-bottom:20px; }
 			.contenido-beneficios div p { font-size:15px; color:#5C6166; }
 	.contenido-beneficios div:last-child { width:64%; height:90%; }
