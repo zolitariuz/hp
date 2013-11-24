@@ -2,8 +2,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css" media="screen" />
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" href="images/favicon.png"/>
 
     <meta charset="UTF-8">
     <title>HP</title>
@@ -44,7 +44,10 @@
                         	<a href="#" id="datos">Datos T&eacute;cnicos</a>
                         </li>
                         <li>
-                        	<a href="pdf/3550.pdf" id="descargar">Descargar ficha</a>
+                            <a href="#" id="video">Video</a>
+                        </li>
+                        <li>
+                        	<a href="pdf/3550.pdf" target="_new"id="descargar">Descargar ficha</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +63,6 @@
                         </ul>
                     </div>
                 </div>
-              
                 <div class="contenido-beneficios">
                 	<!--
                 	<div class="left">
@@ -154,6 +156,15 @@
                     </div>
                 </div>
             </div><!-- content -->
+            <div class="lightbox-container">
+                <div class="lightbox-media">
+                    <iframe src="http://www.youtube.com/embed/M4sCkTbNf_M" frameborder="0" allowfullscreen></iframe>
+                    <h2>HP Indigo 3550</h2>
+                    <a href="#">
+                        <img src="images/cerrar.png" />
+                    </a>
+                </div>
+            </div>
             <div class="menu-vertical right">
                 <ul>
                     <li>
@@ -217,6 +228,7 @@
     <script type="text/javascript" src="js/indigo.js"></script>
      <script>
 	 	slider();
+        lightboxIFrame();
 	</script>
 </body>
 </html>
