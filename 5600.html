@@ -44,6 +44,9 @@
                         	<a href="#" id="datos">Datos T&eacute;cnicos</a>
                         </li>
                         <li>
+                            <a href="#" id="video">Video</a>
+                        </li>
+                        <li>
                         	<a href="pdf/5600.pdf" target="_new" id="descargar">Descargar ficha</a>
                         </li>
                     </ul>
@@ -53,20 +56,18 @@
                     	<img src="images/5600-1.jpg" class="slider-item activo" id="1" />
                         <img src="images/5600-2.jpg" class="slider-item" id="2" />
                         <img src="images/5600-3.jpg" class="slider-item"  id="3" />
-                        <iframe src="//www.youtube.com/embed/M4sCkTbNf_M" frameborder="0" allowfullscreen class="slider-item" id="4"></iframe>
                     	<a href="#" class="flecha-izq left"><img src="images/prev.png" alt="Previous"></a>
                         <a href="#" class="flecha-der right"><img src="images/next.png" alt="Next"></a>
                         <ul class="control-slider">
                         	<li><a href="#" class="activo" id="control-1"></a></li>
                             <li><a href="#" id="control-2"></a></li>
                             <li><a href="#" id="control-3"></a></li>
-                            <li><a href="#" id="control-4"></a></li>
                        	</ul>
                     </div>
                 </div>       
                 <div class="contenido-beneficios">
                 	<div class="left">
-                        <img src="images/etiqueta.png" />
+                        <img src="images/reloj_azul.png" />
                         <h4>Modo de productividad mejorada (EPM)</h4>
                         <p>Tecnolog&iacute;a de color sin precedentes para incrementar la productividad y rentabilidad</p>
                         <ul>
@@ -170,6 +171,17 @@
                     </div>
                 </div>
             </div><!-- content -->
+            <div class="lightbox-container">
+                <div class="lightbox-media">
+                    <div class="frame-video">
+                        <iframe src="http://www.youtube.com/embed/eqOYlnyGBs4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h2>HP Indigo 5600</h2>
+                    <a href="#">
+                        <img src="images/cerrar.png" />
+                    </a>
+                </div>
+            </div> <!-- lightbox -->
             <div class="menu-vertical right">
                 <ul>
                     <li>
@@ -233,6 +245,7 @@
     <script type="text/javascript" src="js/indigo.js"></script>
     <script>
 		slider();
+        lightboxIFrame();
 	</script>
 </body>
 </html>
