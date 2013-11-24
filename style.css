@@ -416,7 +416,7 @@ and (max-width : 767px) {
 
 	/* HOME */
 	.content { width: 80%; min-height:380px !important; }
-	.aplicacion_boton { width: 16%; margin: 8% 5% 0% 4%; }
+	.aplicacion_boton { width: 21%; margin: 2%; }
 		.aplicacion_boton a h4 { font-size: 12px; }
 
 	.bloque-contenido{ width: 100%; float: none; margin: 5px auto; }
