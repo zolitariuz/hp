@@ -19,7 +19,7 @@ $( document ).ready(function() {
 	}
 
 	// HISTORIAS DE EXITO
-	var menuCasos = $(".panel-historias");
+	var menuCasos = $(".panel-historias ul");
 	if(menuCasos[0] != null) {
 		muestraInfoCasos("caso");
 		menuCasos[0].addEventListener("click", cambiaTabCasos, false);
