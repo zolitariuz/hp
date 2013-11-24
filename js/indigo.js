@@ -19,7 +19,7 @@ $( document ).ready(function() {
 	}
 
 	// HISTORIAS DE EXITO
-	var menuCasos = $(".panel-historias");
+	var menuCasos = $(".panel-historias ul");
 	if(menuCasos[0] != null) {
 		muestraInfoCasos("caso");
 		menuCasos[0].addEventListener("click", cambiaTabCasos, false);
@@ -116,7 +116,7 @@ $( document ).ready(function() {
 	} // cambiaTabCasos
 
 	function muestraInfoPrensas(id) {
-		if(id != "descargar") {
+		if(id != "descargar" && id != "video") {
 			resetInfoPrensas();
 			$(".panel-prensas ul li a#" + id).addClass("activo");
 			if (id == "prensa")
@@ -196,6 +196,51 @@ $( document ).ready(function() {
 
 			}
 		});
+	}
 
+	function lightboxVid() {
+	    $(".seccion-segmento ul li a").click(function () {
+	        esconderVid();
+	        var id = $(this).attr("class");
+	        $(".lightbox-container video." + id).addClass("activo");
+	        $(".lightbox-container").css("display", "block");
+	        if (id == "eilat") {
+	            $(".lightbox-container h2").text("Eilat");
+	        } else if (id == "conference") {
+	            $(".lightbox-container h2").text("Conference");
+	        } else if (id == "death-sea") {
+	            $(".lightbox-container h2").text("The Death Sea");
+	        } else if (id == "green-tourism") {
+	            $(".lightbox-container h2").text("Green Tourism");
+	        } else if (id == "zumba") {
+	            $(".lightbox-container h2").text("Green Tourism");
+	        } else if (id == "medical-tourism") {
+	            $(".lightbox-container h2").text("Medical Tourism in Israel");
+	        } else if (id == "land") {
+	            $(".lightbox-container h2").text("A Land of Everlasting Promise");
+	        } else if (id == "intimate-journey") {
+	            $(".lightbox-container h2").text("An Intimate Journey to the Holy Land");
+	        } else if (id == "spirit") {
+	            $(".lightbox-container h2").text("Spirit of Israel");
+	        }
+	        $(".lightbox-media a").click(function () {
+	            var vid = $(".lightbox-container video." + id);
+	            vid[0].pause();
+	            $(".lightbox-container").css("display", "none");
+	        });
+	    });
+	}
 
+	function esconderVid() {
+	    $(".lightbox-container video").removeClass("activo");
+	}
+
+	function lightboxIFrame() {
+	    $(".botones-prensa li a#video").click(function () {
+	        $(".lightbox-container").css("display", "block");
+	        
+	        $(".lightbox-media a").click(function () {
+	            $(".lightbox-container").css("display", "none");
+	        });
+	    });
 	}

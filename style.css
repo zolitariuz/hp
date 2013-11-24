@@ -253,6 +253,8 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 	.contenido-slider .slider { width:100%; position: relative; }
 		.contenido-slider img { width:80%; display:none; margin-left:10%; }
 		.contenido-slider img.activo { display:block; }
+		.contenido-slider iframe { width:80%; display:none; margin-left:10%; }
+		.contenido-slider iframe.activo { display:block; }
 		.contenido-slider a { width:40px; height:40px; display:block; }
 			.contenido-slider ul { list-style:none; text-align:center; margin-left:20px; }
 				.contenido-slider ul li { display:inline-block; }
@@ -317,6 +319,30 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 		.botones-adicionales li a.activo { background-color:#2474A0; cursor:default; font-weight:bold; }
 
 
+/* LIGHTBOX VIDEOS */
+.lightbox-container { position:absolute; width:100%; height:100%; top:0; left:0; background-color:rgba(0, 0, 0, 0.5); z-index: 90; overflow:hidden; display:none; }
+    .lightbox-container .lightbox-media { width:60%; margin:2% auto; padding: 2%; background: #00a0dd; display: block; position:relative;
+			border-top-right-radius: 15px;
+			border-bottom-left-radius: 15px;
+			-webkit-border-top-right-radius: 15px;
+			-webkit-border-bottom-left-radius: 15px;
+			-moz-border-radius-topright: 15px;
+			-moz-border-radius-bottomleft: 15px;}
+        .lightbox-media a { width:50px; height:50px; display:block; float:right; margin-top: -40px;}
+            .lightbox-media a img { width:100%; height:auto;}
+        .lightbox-container .lightbox-media video { width:100%; height:auto;}
+        .lightbox-container .lightbox-media iframe { width:100%; height:auto; }
+        .lightbox-container .lightbox-media h2 { font-size:36px; color:#FFF; font-family: 'hp_regular'; margin-top:10px; margin-bottom:0; line-height:36px; padding-top:20px; }
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 1350px){
+	/* HOME */
+	header h1{ font-size:52px; line-height:110px; }
+	header .logo img { width: 110px; height: 110px; }
+	.menu-vertical ul li a p { font-size:18px; }
+	.aplicacion_boton a h4 { font-size:24px; }
+}
 
 /* iPads (landscape) ----------- */
 @media only screen
