@@ -350,6 +350,14 @@ and (min-width : 1350px){
 	.panel-prensas h3 { font-size: 24px; }
 	.panel-prensas p { font-size: 18px;}
 	.panel-prensas ul li a { height: 60px; line-height: 60px; font-size: 24px; }
+	.contenido-beneficios div h4 { font-size:24px; margin-bottom:30px; }
+	.contenido-beneficios div p { font-size: 20px;}
+	.contenido-beneficios div ul li { font-size: 16px;}
+		.contenido-beneficios div ul li h5 { font-size: 20px;}
+		.contenido-beneficios div ul li p { font-size: 16px;}
+	.contenido-datos div h4 { font-size: 24px; }
+	.contenido-datos div p { font-size: 20px; }
+	.contenido-datos div ul li a { line-height: 60px; font-size: 18px;}
 }
 
 /* iPads (landscape) ----------- */
