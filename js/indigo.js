@@ -137,7 +137,7 @@ $( document ).ready(function() {
 		var id = e.target.id;
 		muestraInfoPrensas(id);
 	} // cambiaTabCasos
-	
+
 	function slider() {
 		var numImg = $(".slider .control-slider li").length;
 		$(".slider .control-slider a").click(function(){
@@ -166,13 +166,13 @@ $( document ).ready(function() {
 			$(".slider img#" + activo).addClass("activo");
 			$(".slider .control-slider a#control-" + activo).addClass("activo");
 		});
-		
+
 		function limpiaControl() {
 			$(".slider .control-slider a").removeClass("activo");
 		}
 		function limpiaImg() {
 			$(".slider img").removeClass("activo");
-		}	
+		}
 	}
 
 	function jsResponsivo() {
@@ -237,10 +237,15 @@ $( document ).ready(function() {
 
 	function lightboxIFrame() {
 	    $(".botones-prensa li a#video").click(function () {
+
 	        $(".lightbox-container").css("display", "block");
-	        
+
 	        $(".lightbox-media a").click(function () {
 	            $(".lightbox-container").css("display", "none");
 	        });
+
+	        $('body').animate(
+	    		{ scrollTop:0 }, '500'
+	    	);
 	    });
 	}
