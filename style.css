@@ -480,6 +480,7 @@ and (max-width : 620px) {
 	.contenido-caso{ width: 90%; margin: auto; padding-bottom: 10px; float: none;}
 	.contenido-testimonial{ width: 90%; }
 	.contenido-fotos{ width: 90%; margin: auto; float: none;}
+	.contenido-video{ width: 90%; margin: auto; float: none; }
 
 	/* SINGLE PRENSA */
 	.menu-vertical{ display: none;}
