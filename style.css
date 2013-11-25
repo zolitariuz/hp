@@ -443,7 +443,7 @@ and (max-width : 767px) {
 and (max-width : 620px) {
 
 	.container{ width: 90%; }
-	.content { width: 100%; min-height: 0px !important; margin-bottom: 15px; float: none; }
+	.content { width: 100%; min-height: 0px !important; margin-bottom: 30%; float: none; }
 
 	.menu-vertical ul li a p { font-size: 14px; }
 	.bloque-contenido{ width: 100%; }
@@ -510,13 +510,13 @@ and (max-width : 480px) {
 	header h1 { height: 75px; line-height: 75px; font-size: 20px; }
 	header .instruccion { font-size: 20px; }
 
-	.menu-vertical { display:none; }
-	.menu-horizontal { width: 100%; display: block; margin: 0; list-style: none; }
-		.menu-horizontal li { width: 19%;  margin: 0 0.5%; float:left; position: relative; }
-		.menu-horizontal li a { width: 100%; padding: 1%; color: #fff; text-decoration: none; text-align: center; background: #e95446; display:block;  }
-		.menu-horizontal li a:hover { background: #c03531; }
-			.menu-horizontal li img { width: 80%; height: auto; margin: 10px auto; }
-			.menu-horizontal li p { display: none; }
+
+	.menu-horizontal { background: #fff; padding-top: 5px; position: fixed; bottom: 0; }
+		.menu-horizontal li {  }
+		.menu-horizontal li a {  }
+		.menu-horizontal li a:hover {  }
+			.menu-horizontal li img {  }
+			.menu-horizontal li p { }
 
 	/* HOME */
 	.aplicacion_boton a h4 { font-size: 10px; }
