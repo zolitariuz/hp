@@ -443,7 +443,7 @@ and (max-width : 767px) {
 and (max-width : 620px) {
 
 	.container{ width: 90%; }
-	.content { width: 100%; min-height: 0px !important; margin-bottom: 30%; float: none; }
+	.content { width: 100%; min-height: 0px !important; float: none; }
 
 	.menu-vertical ul li a p { font-size: 14px; }
 	.bloque-contenido{ width: 100%; }
@@ -511,13 +511,6 @@ and (max-width : 480px) {
 	header .instruccion { font-size: 20px; }
 
 
-	.menu-horizontal { background: #fff; padding-top: 5px; position: fixed; bottom: 0; }
-		.menu-horizontal li {  }
-		.menu-horizontal li a {  }
-		.menu-horizontal li a:hover {  }
-			.menu-horizontal li img {  }
-			.menu-horizontal li p { }
-
 	/* HOME */
 	.aplicacion_boton a h4 { font-size: 10px; }
 
@@ -571,6 +564,15 @@ and (max-width : 480px) {
 @media only screen
 and (max-width : 320px) {
 
+	.content{ width: 90%; margin: 0 auto 30% auto; }
+
 	.panel-historias .regresa p{ line-height: 25px; }
+
+	.menu-horizontal { background: #fff; padding-top: 5px; position: fixed; bottom: 0; }
+		.menu-horizontal li {  }
+		.menu-horizontal li a {  }
+		.menu-horizontal li a:hover {  }
+			.menu-horizontal li img {  }
+			.menu-horizontal li p { }
 
 }
