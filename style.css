@@ -558,6 +558,13 @@ and (max-width : 480px) {
 
 	.menu-adicionales .botones-adicionales li a{ font-size: 12px; }
 
+	/* LIGHTBOX VIDEOS */
+	.lightbox-container .lightbox-media { width:95%; }
+	.lightbox-media a { width:30px; height:30px; display:block; float:right; margin-top: -30px;}
+	.lightbox-media a img { width:100%; height:auto;}
+	.lightbox-container .lightbox-media h2 { font-size:26px; margin-top: 0; line-height:26px; padding-top:10px; }
+
+
 }
 
 /* Smartphones (portrait) ----------- */
