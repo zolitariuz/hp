@@ -100,14 +100,14 @@ $( document ).ready(function() {
 			$(".contenido-caso").css("display", "block");
 		else if (id == "video")
 			$(".contenido-video").css("display", "block");
-		else if (id == "testimonial")
-			$(".contenido-testimonial").css("display", "block");
+		else if (id == "fotos")
+			$(".contenido-fotos").css("display", "block");
 	} // muestraInfoCasos
 	function resetInfoCasos() {
 		$(".panel-historias ul li a").removeClass("activo");
 		$(".contenido-caso").css("display", "none");
 		$(".contenido-video").css("display", "none");
-		$(".contenido-testimonial").css("display", "none");
+		$(".contenido-fotos").css("display", "none");
 	} // resetInfoCasos
 	function cambiaTabCasos(e){
 	// activa y muestra la info de la opcion seleccionada
