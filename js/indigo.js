@@ -32,6 +32,35 @@ $( document ).ready(function() {
 		menuPrensas[0].addEventListener("click", cambiaTabPrensas, false);
 	}
 
+	var timeOut = 3000;
+
+
+	window.setInterval(function(){
+		timeOut -=1000
+
+		if ( timeOut == -1000 ){
+			timeOut = 3000;
+		}
+
+		if ( timeOut == 0 ){
+			$('.lightbox-container').show();
+			console.log('es igual a 0');
+		}
+
+		console.log(timeOut);
+
+	}, 1000);
+
+
+	$('.container').on('click', function(){
+		timeOut = 3000;
+	});
+
+	$('.lightbox-container').on('click', function(){
+		$(this).hide();
+		timeOut = 3000;
+	});
+
 });
 
 
