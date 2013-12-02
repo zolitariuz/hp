@@ -79,9 +79,9 @@
   box-sizing: border-box;
 }
 
-html, body { background: #fff; -webkit-font-smoothing: antialiased; font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+html, body { max-width: 1824px; min-width: 320px; background: #fff; -webkit-font-smoothing: antialiased; font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
-.container { width: 95%; max-width: 1824px; min-width: 320px; margin: 20px auto 0 auto; }
+.container { width: 95%; margin: 20px auto 0 auto; }
 
 header { margin: 0 0 20px 0; border-bottom: 3px solid #f5f6f7; }
 header .logo { width: 95px; height: 95px; margin: 0 20px 0 0; display: block; float: left; }
@@ -378,7 +378,6 @@ and (max-width : 1024px) {
 
 	/* HOME */
 	.content{ width: 80%; }
-	.aplicacion_boton { width: 16%; margin: 8% 5% 0% 4%; }
 
 	/* SEGMENTOS */
 	.main-content .seccion-segmento ul li { width: 47%; margin-bottom: 15px; margin-top:-5px; font-size: 14px; }
