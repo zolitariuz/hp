@@ -79,9 +79,9 @@
   box-sizing: border-box;
 }
 
-html, body { background: #fff; -webkit-font-smoothing: antialiased; font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+html, body { max-width: 1824px; min-width: 320px; background: #fff; -webkit-font-smoothing: antialiased; font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
-.container { width: 95%; max-width: 1824px; min-width: 320px; margin: 20px auto 0 auto; }
+.container { width: 95%; margin: 20px auto 0 auto; }
 
 header { margin: 0 0 20px 0; border-bottom: 3px solid #f5f6f7; }
 header .logo { width: 95px; height: 95px; margin: 0 20px 0 0; display: block; float: left; }
@@ -186,15 +186,15 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 		.botones-historia li a:hover { background-color:#2474A0; }
 		.botones-historia li a.activo { background-color:#2474A0; cursor:default; font-weight:bold; }
 
-.contenido-caso { width:70%; margin-left: 28%; margin-top:2%; height:90%; padding-left:2%;  }
-	.contenido-caso ul li { font-family:'hp_regular'; font-size: 14px; }
+.contenido-caso { width:70%; margin-left: 28%; margin-top:0%; height:90%; padding-left:2%;  }
+	.contenido-caso ul li { font-family:'hp_regular'; font-size: 16px; }
 	.contenido-caso p { color:#5C6166; font-family:'hp_bold'; font-size:16px; float:left; margin-top: -30px;}
 
 		.link-prensa a{  width:160px; display:block; color:#FFF; text-decoration:none; background-color:#00A0DD; height:30px; font-size:16px; line-height:30px; text-align:left; padding-left: 3%; font-family:'hp_bold'; float:left; margin-left:10px; margin-top: -40px; }
 		.link-prensa a:hover{ background-color:#2474A0; }
 
-.bloque-contenido { width:46%; margin-left:3%; margin-bottom: 5%; }
-	.bloque-contenido h3 { padding-bottom:10px; border-bottom:2px solid #00A0DD; font-family:'hp_bold'; font-size:20px; }
+.bloque-contenido { width:46%; margin-left:3%; margin-bottom: 3%; }
+	.bloque-contenido h3 { margin: 0; padding: 0 0 10px 0; border-bottom:2px solid #00A0DD; font-family:'hp_bold'; font-size:20px; }
 
 .contenido-video { width: 60%; margin: 2% auto 0 auto; position: relative; padding-bottom: 36.25%; overflow: hidden; }
 		.contenido-video .frame-video { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
@@ -378,7 +378,6 @@ and (max-width : 1024px) {
 
 	/* HOME */
 	.content{ width: 80%; }
-	.aplicacion_boton { width: 16%; margin: 8% 5% 0% 4%; }
 
 	/* SEGMENTOS */
 	.main-content .seccion-segmento ul li { width: 47%; margin-bottom: 15px; margin-top:-5px; font-size: 14px; }
