@@ -2,11 +2,12 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css" media="screen" />
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=2">
 
     <meta charset="UTF-8">
-    <title>HP</title>
+    <title>HP Indigo | Adicional</title>
 
     <!--[if lt IE 9]>
         <script src="dist/html5shiv.js"></script>
@@ -33,14 +34,55 @@
 
             <div class="content left">
 
-                <div class="seccion-segmento" id="aplicaciones">
-                    <ul class="clearfix">
-                        <li><a href="aurasma.html">Aurasma</a></li>
-                        <li><a href="calendario_de_eventos.html">Calendario de eventos</a></li>
-                        <li><a href="indigo_enviroment.html">Indigo Enviroment</a></li>
-                        <li><a href="proximos_lanzamientos.html">Próximos lanazamientos</a></li>
+                <div class="subtitulo clearfix">
+                    <img src="images/adicional_azul.png" class="left" />
+                    <h2 class="left">Adicional</h2>
+                </div><!-- subtitulo -->
+                <div class="left menu-adicionales">
+                    <ul class="clearfix botones-adicionales">
+                        <li><a href="#" class="activo">
+                            Aurasma
+                        </a></li>
+                        <li><a href="#">
+                            Calendario de eventos
+                        </a></li>
+                        <li><a href="#">
+                            Indigo Enviroment
+                        </a></li>
+                        <li><a href="#">
+                            Próximos lanazamientos
+                        </a></li>
                     </ul>
-                </div><!-- seccion-segmento -->
+                </div><!-- sub_menu -->
+
+                <div class="main-content adicionales left">
+                    <div class="seccion-segmento" id="aurasma" style="display: block;">
+                        <div class="contenido-slider">
+                            <div class="slider">
+                                <img src="images/t400-1.jpg" class="slider-item activo" id="1" />
+                                <img src="images/t400-2.jpg" class="slider-item" id="2" />
+                                <img src="images/t400-3.jpg" class="slider-item"  id="3" />
+                                <img src="images/t400-4.jpg" class="slider-item" id="4" />
+                                <a href="#" class="flecha-izq left"><img src="images/prev.png" alt="Previous"></a>
+                                <a href="#" class="flecha-der right"><img src="images/next.png" alt="Next"></a>
+                                <ul class="control-slider">
+                                    <li><a href="#" class="activo" id="control-1"></a></li>
+                                    <li><a href="#" id="control-2"></a></li>
+                                    <li><a href="#" id="control-3"></a></li>
+                                    <li><a href="#" id="control-4"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seccion-segmento " id="calendario-de-eventos" style="display: none;">
+
+                    </div>
+                    <div class="seccion-segmento " id="indigo-enviroment" style="display: none;">
+                        <iframe src="//www.youtube.com/embed/8Lg-UeFCZ68" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="seccion-segmento " id="proximos-lanzamientos" style="display: none;">
+                    </div><!-- videos -->
+                </div>
 
             </div><!-- content -->
 
@@ -78,6 +120,8 @@
                     </li>
                 </ul>
             </div><!-- menu-vertical -->
+
+            <div class="clear"></div>
 
             <ul class="menu-horizontal clearfix">
                 <li>
@@ -119,5 +163,8 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jRespond.js"></script>
     <script type="text/javascript" src="js/indigo.js"></script>
+    <script type="text/javascript">
+        slider();
+    </script>
 </body>
 </html>

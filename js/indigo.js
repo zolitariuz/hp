@@ -19,7 +19,7 @@ $( document ).ready(function() {
 	}
 
 	// HISTORIAS DE EXITO
-	var menuCasos = $(".panel-historias");
+	var menuCasos = $(".panel-historias ul");
 	if(menuCasos[0] != null) {
 		muestraInfoCasos("caso");
 		menuCasos[0].addEventListener("click", cambiaTabCasos, false);
@@ -38,6 +38,30 @@ $( document ).ready(function() {
 		menuPrensa[0].addEventListener("click", cambiaTabPrensa, false);
 	}
 	
+
+	// var timeOut = 3000;
+	// window.setInterval(function(){
+	// 	timeOut -=1000
+
+	// 	if ( timeOut == -1000 ){
+	// 		timeOut = 3000;
+	// 	}
+
+	// 	if ( timeOut == 0 ){
+	// 		$('.lightbox-container').show();
+	// 		console.log('es igual a 0');
+	// 	}
+
+	// }, 1000);
+
+	// $('.container').on('click', function(){
+	// 	timeOut = 3000;
+	// });
+
+	// $('.lightbox-container').on('click', function(){
+	// 	$(this).hide();
+	// 	timeOut = 3000;
+	// });
 
 });
 
@@ -107,14 +131,14 @@ $( document ).ready(function() {
 			$(".contenido-caso").css("display", "block");
 		else if (id == "video")
 			$(".contenido-video").css("display", "block");
-		else if (id == "testimonial")
-			$(".contenido-testimonial").css("display", "block");
+		else if (id == "fotos")
+			$(".contenido-fotos").css("display", "block");
 	} // muestraInfoCasos
 	function resetInfoCasos() {
 		$(".panel-historias ul li a").removeClass("activo");
 		$(".contenido-caso").css("display", "none");
 		$(".contenido-video").css("display", "none");
-		$(".contenido-testimonial").css("display", "none");
+		$(".contenido-fotos").css("display", "none");
 	} // resetInfoCasos
 	function cambiaTabCasos(e){
 	// activa y muestra la info de la opcion seleccionada
@@ -123,7 +147,7 @@ $( document ).ready(function() {
 	} // cambiaTabCasos
 
 	function muestraInfoPrensas(id) {
-		if(id != "descargar") {
+		if(id != "descargar" && id != "video") {
 			resetInfoPrensas();
 			$(".panel-prensas ul li a#" + id).addClass("activo");
 			if (id == "prensa")
@@ -144,7 +168,7 @@ $( document ).ready(function() {
 		var id = e.target.id;
 		muestraInfoPrensas(id);
 	} // cambiaTabCasos
-	
+
 	function muestraInfoPrensa(id) {
 		resetInfoPrensa();
 		$("#tb-"+id).css("display", "block");
@@ -187,13 +211,13 @@ $( document ).ready(function() {
 			$(".slider img#" + activo).addClass("activo");
 			$(".slider .control-slider a#control-" + activo).addClass("activo");
 		});
-		
+
 		function limpiaControl() {
 			$(".slider .control-slider a").removeClass("activo");
 		}
 		function limpiaImg() {
 			$(".slider img").removeClass("activo");
-		}	
+		}
 	}
 
 	function jsResponsivo() {
@@ -217,6 +241,56 @@ $( document ).ready(function() {
 
 			}
 		});
+	}
 
+	function lightboxVid() {
+	    $(".seccion-segmento ul li a").click(function () {
+	        esconderVid();
+	        var id = $(this).attr("class");
+	        $(".lightbox-container video." + id).addClass("activo");
+	        $(".lightbox-container").css("display", "block");
+	        if (id == "eilat") {
+	            $(".lightbox-container h2").text("Eilat");
+	        } else if (id == "conference") {
+	            $(".lightbox-container h2").text("Conference");
+	        } else if (id == "death-sea") {
+	            $(".lightbox-container h2").text("The Death Sea");
+	        } else if (id == "green-tourism") {
+	            $(".lightbox-container h2").text("Green Tourism");
+	        } else if (id == "zumba") {
+	            $(".lightbox-container h2").text("Green Tourism");
+	        } else if (id == "medical-tourism") {
+	            $(".lightbox-container h2").text("Medical Tourism in Israel");
+	        } else if (id == "land") {
+	            $(".lightbox-container h2").text("A Land of Everlasting Promise");
+	        } else if (id == "intimate-journey") {
+	            $(".lightbox-container h2").text("An Intimate Journey to the Holy Land");
+	        } else if (id == "spirit") {
+	            $(".lightbox-container h2").text("Spirit of Israel");
+	        }
+	        $(".lightbox-media a").click(function () {
+	            var vid = $(".lightbox-container video." + id);
+	            vid[0].pause();
+	            $(".lightbox-container").css("display", "none");
+	        });
+	    });
+	}
 
+	function esconderVid() {
+	    $(".lightbox-container video").removeClass("activo");
+	}
+
+	function lightboxIFrame() {
+	    $(".botones-prensa li a#video").click(function () {
+
+	        $(".lightbox-container").css("display", "block");
+
+	        $(".lightbox-media a").click(function () {
+	            $(".lightbox-container").css("display", "none");
+	        });
+
+	        $('body').animate(
+	    		{ scrollTop:0 }, '500'
+	    	);
+	    });
 	}

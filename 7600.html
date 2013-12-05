@@ -2,11 +2,12 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css" media="screen" />
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=2">
 
     <meta charset="UTF-8">
-    <title>HP</title>
+    <title>HP Indigo | 7600</title>
 
     <!--[if lt IE 9]>
         <script src="dist/html5shiv.js"></script>
@@ -33,8 +34,7 @@
                 	<h2>HP Indigo 7600</h2>
                     <h3>Calidad de vanguardia en una plataforma probada, ahora con mayor velocidad y capacidades de aplicaciones innovadoras.</h3>
                     <p>La prensa digital HP Indigo 7600, la m&aacute;s r&aacute;pida en formato SRA3+ de impresi&oacute;n offset digital en el mercado, combina la probada calidad, versatilidad y avance en productividad con la nueva automatizaci&oacute;n inteligente que maximiza el tiempo de actividad. Las nuevas capacidades, incluyendo efectos especiales de impresi&oacute;n en relieve y textura, expanden las oportunidades para ofrecer aplicaciones de alto valor.</p>
-                    <img />
-                    <ul>
+                    <ul class="botones-prensa clearfix">
                     	<li>
                         	<a href="#" id="prensa">Conocer prensa</a>
                         </li>
@@ -42,7 +42,10 @@
                         	<a href="#" id="beneficios">Beneficios</a>
                         </li>
                         <li>
-                        	<a href="#" id="datos">Datos T&eacute;cnicos</a>
+                        	<a href="#" id="datos">Datos t&eacute;cnicos</a>
+                        </li>
+                        <li>
+                            <a href="#" id="video">Video</a>
                         </li>
                         <li>
                         	<a href="pdf/7600.pdf" target="_new" id="descargar">Descargar ficha</a>
@@ -51,12 +54,12 @@
                 </div>
                 <div class="contenido-slider">
                 	<div class="slider">
-                    	<img src="images/casos_de_estudio_azul.png" class="slider-item activo" id="1" />
-                        <img src="images/correo_azul.png" class="slider-item" id="2" />
-                        <img src="images/corrugado_azul.png" class="slider-item"  id="3" />
-                        <img src="images/etiqueta_azul.png" class="slider-item" id="4" />
-                    	<a href="#" class="flecha-izq left"></a>
-                        <a href="#" class="flecha-der right"></a>
+                    	<img src="images/7600-1.jpg" class="slider-item activo" id="1" />
+                        <img src="images/7600-2.jpg" class="slider-item" id="2" />
+                        <img src="images/7600-3.jpg" class="slider-item"  id="3" />
+                        <img src="images/7600-4.jpg" class="slider-item"  id="4" />
+                    	<a href="#" class="flecha-izq left"><img src="images/prev.png" alt="Previous"></a>
+                        <a href="#" class="flecha-der right"><img src="images/next.png" alt="Next"></a>
                         <ul class="control-slider">
                         	<li><a href="#" class="activo" id="control-1"></a></li>
                             <li><a href="#" id="control-2"></a></li>
@@ -64,10 +67,10 @@
                             <li><a href="#" id="control-4"></a></li>
                        	</ul>
                     </div>
-                </div>       
+                </div>
                 <div class="contenido-beneficios">
                 	<div class="left">
-                        <img src="images/etiqueta.png" />
+                        <img src="images/reloj_azul.png" />
                         <h4>Modo de productividad mejorada (EPM)</h4>
                         <p>Tecnolog&iacute;a de color sin precedentes para incrementar la productividad y rentabilidad</p>
                         <ul>
@@ -120,7 +123,7 @@
                             	<p><strong>Ciclo de trabajo mensual:</strong> 4 millones de p&aacute;ginas a color</p>
                             </li>
                             <li>
-                            	<p><strong>Velocidad de impresi&oacuten;: </strong> 120 ppm a 4 colores (A4, dos-arriba), 160 ppm en EPM (A4, dos-arriba), 240 ppm a 2 colores (8.5 x 11 pulgadas/A4, dos-arriba)</p>
+                            	<p><strong>Velocidad de impresi&oacute;n: </strong> 120 ppm a 4 colores (A4, dos-arriba), 160 ppm en EPM (A4, dos-arriba), 240 ppm a 2 colores (8.5 x 11 pulgadas/A4, dos-arriba)</p>
                             </li>
                             <li>
                             	<p><strong>Tamaño m&aacute;ximo de la hoja:</strong> 330 x 482 mm (13 x 19 pulgadas)</p>
@@ -158,16 +161,27 @@
                             	<a href="fotografia.html">Fotograf&iacute;a</a>
                             </li>
                             <li>
-                            	<a href="editorial.html">Editorial</a>
+                            	<a href="editorial.html">Editorial y publicación de libros</a>
                             </li>
                             <li>
                             	<a href="emp_carton.html">Empaque de cart&oacute;n plegadizo</a>
                             </li>
                         </ul>
-                        
+
                     </div>
                 </div>
             </div><!-- content -->
+            <div class="lightbox-container">
+                <div class="lightbox-media">
+                    <div class="frame-video">
+                        <iframe src="http://www.youtube.com/embed/REgyj2kHgQE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h2>HP Indigo 7600</h2>
+                    <a href="#">
+                        <img src="images/cerrar.png" />
+                    </a>
+                </div>
+            </div> <!-- lightbox -->
             <div class="menu-vertical right">
                 <ul>
                     <li>
@@ -178,8 +192,8 @@
                     </li>
                     <li>
                         <a href="historias.html">
-                            <img src="images/casos_de_estudio.png" alt="Historias de &Eacute;xito">
-                            <p>Historias de &Eacute;xito</p>
+                            <img src="images/casos_de_estudio.png" alt="Historias de &eacute;xito">
+                            <p>Historias de &eacute;xito</p>
                         </a>
                     </li>
                     <li>
@@ -202,28 +216,40 @@
                     </li>
                 </ul>
             </div><!-- menu-vertical -->
-            <div class="menu-horizontal">
-            	<a href="index.html">
-                    <img src="images/home.png" alt="Home">
-                    <p><br />Home</p>
-                </a>
-                <a href="historias.html">
-                    <img src="images/casos_de_estudio.png" alt="Historias de &Eacute;xito">
-                    <p>Historias de &Eacute;xito</p>
-                </a>
-                <a href="habilitadores.html">
-                    <img src="images/habilitadores.png" alt="Habilitadores">
-                    <p><br />Habilitadores</p>
-                </a>
-                <a href="#" class="activo">
-                    <img src="images/prensas_digitales.png" alt="Prensas digitales">
-                    <p>Prensas digitales</p>
-                </a>
-                <a href="adicionales.html">
-                    <img src="images/adicional.png" alt="Adicional">
-                    <p><br />Adicional</p>
-                </a>
-            </div> <!-- menu-horizontal -->
+            <ul class="menu-horizontal clearfix">
+                <li>
+                    <a href="index.html" class="activo">
+                        <img src="images/home.png" alt="Home">
+                        <p>Home</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="historias.html">
+                        <img src="images/casos_de_estudio.png" alt="Historias de &Eacute;xito">
+                        <p>Historias de &eacute;xito</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="habilitadores.html">
+                        <img src="images/habilitadores.png" alt="Habilitadores">
+                        <p>Habilitadores</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="prensas.html">
+                        <img src="images/prensas_digitales.png" alt="Prensas digitales">
+                        <p>Prensas digitales</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="adicionales.html">
+                        <img src="images/adicional.png" alt="Adicional">
+                        <p>Adicional</p>
+                    </a>
+                </li>
+            </ul> <!-- menu-horizontal -->
         </div><!-- main -->
     </div><!--container-->
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -231,6 +257,7 @@
     <script type="text/javascript" src="js/indigo.js"></script>
     <script>
 		slider();
+        lightboxIFrame();
 	</script>
 </body>
 </html>
