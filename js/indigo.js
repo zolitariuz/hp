@@ -38,6 +38,17 @@ $( document ).ready(function() {
 		menuPrensa[0].addEventListener("click", cambiaTabPrensa, false);
 	}
 	
+	var menuAdicionales = $(".menu-adicionales ul");
+	if(menuAdicionales[0] != null) {
+		muestraInfoAdicionales("aurasma");
+		menuAdicionales[0].addEventListener("click", cambiaTabAdicionales, false);
+	}
+	
+	var menuHabilitadores = $(".menu-habilitadores ul");
+	if(menuHabilitadores[0] != null) {
+		muestraInfoHabilitadores("servicio");
+		menuHabilitadores[0].addEventListener("click", cambiaTabHabilitadores, false);
+	}
 
 	// var timeOut = 3000;
 	// window.setInterval(function(){
@@ -183,6 +194,34 @@ $( document ).ready(function() {
 		muestraInfoPrensa(id);
 	} // cambiaTabCasos
 	
+	function muestraInfoAdicionales(id) {
+		resetInfoAdicionales();
+		$(".seccion-segmento#"+id).css("display", "block");
+		$("#"+id).addClass("activo");
+	} // muestraInfoPrensas
+	function resetInfoAdicionales() {
+		$(".menu-adicionales ul li a").removeClass("activo");
+		$(".seccion-segmento").css("display", "none");
+	} // resetInfoPrensas
+	function cambiaTabAdicionales(e){
+		var id = e.target.id;
+		muestraInfoAdicionales(id);
+	} // cambiaTabCasos
+	
+	function muestraInfoHabilitadores(id) {
+		resetInfoHabilitadores();
+		$(".seccion-segmento#"+id).css("display", "block");
+		$("#"+id).addClass("activo");
+	} // muestraInfoPrensas
+	function resetInfoHabilitadores() {
+		$(".menu-habilitadores ul li a").removeClass("activo");
+		$(".seccion-segmento").css("display", "none");
+	} // resetInfoPrensas
+	function cambiaTabHabilitadores(e){
+		var id = e.target.id;
+		muestraInfoHabilitadores(id);
+	} // cambiaTabCasos
+	
 	function slider() {
 		var numImg = $(".slider .control-slider li").length;
 		$(".slider .control-slider a").click(function(){
@@ -218,29 +257,6 @@ $( document ).ready(function() {
 		function limpiaImg() {
 			$(".slider img").removeClass("activo");
 		}
-	}
-
-	function jsResponsivo() {
-	// definir funciones especificas para diferentes tamaños de pantalla usando jRespond
-
-		var jRes = jRespond([
-			{
-				label: 'movil',
-				enter: 0,
-				exit: 481
-			}
-		]);
-
-		// funciones específicas para cada breakpoint
-		jRes.addFunc({
-			breakpoint: 'movil',
-			enter: function() {
-
-			},
-			exit: function() {
-
-			}
-		});
 	}
 
 	function lightboxVid() {
