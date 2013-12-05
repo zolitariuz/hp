@@ -176,7 +176,7 @@ $( document ).ready(function() {
 	} // muestraInfoPrensas
 	function resetInfoPrensa() {
 		$(".menu-prensas ul li a").removeClass("activo");
-		$(".contenido-prensa").css("display", "none");
+		$("table").css("display", "none");
 	} // resetInfoPrensas
 	function cambiaTabPrensa(e){
 		var id = e.target.id;
