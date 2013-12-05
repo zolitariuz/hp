@@ -82,7 +82,7 @@ html, body { background: #fff; -webkit-font-smoothing: antialiased; font-family:
 
 .container { width: 95%; max-width: 1824px; min-width: 320px; margin: 20px auto 0 auto; }
 
-header { margin: 0 0 20px 0; border-bottom: 1px solid #949699; }
+header { margin: 0 0 20px 0; border-bottom: 3px solid rgb(245, 245, 245); }
 header .logo { width: 95px; height: 95px; margin: 0 20px 0 0; display: block; float: left; }
 header h1 { height: 95px; margin: 0 0 20px 0; line-height: 95px; font-family: 'hp_bold'; font-size: 40px; }
 header h1 a { color: #000; text-decoration: none; }
@@ -100,7 +100,7 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 /********************
 		HOME
  ********************/
-.content { background: #f5f6f7; width: 86%; margin-bottom: 50px; }
+.content { background:#FFF; width: 86%; margin-bottom: 50px; }
 
 .aplicacion_boton { width: 16%; margin: 3% 5% 3% 4%; }
 	.aplicacion_boton a { color: #000; text-decoration: none; }
@@ -173,14 +173,15 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 			.historia .botones-historia li a:hover { background-color:#2474A0; }
 			.historia .botones-historia li a.vacio { background-color:transparent; cursor: default; border: 2px solid #D1D2D4; }
 
-.panel-historias { width:28%; height:100%; font-family: 'hp_regular'; border-right:5px solid #DBDCDE;}
-	.panel-historias h2 { font-family: 'hp_bold'; font-size:26px; padding-left:2%; margin:15px 0 0 3%; }
-	.panel-historias h3 { font-size:14px; padding-left:2%; color:#00A0DD; margin:0 0 20px 3%; }
-	.panel-historias .main_image { width: 80%; height:45%; display:block; margin:0 auto; }
+.panel-historias { width:28%; height:100%; font-family: 'hp_regular'; border-right:3px solid rgb(245, 245, 245); padding-right:10px;}
+	.panel-historias h2 { font-family: 'hp_bold'; font-size:28px; padding-left:2%; margin:15px 0 0 3%; }
+	.panel-historias h3 { font-size:20px; padding-left:2%; color:#00A0DD; margin:0 0 20px 3%; }
+	.panel-historias .main_image { width: 90%; height:auto; display:block; margin:0 auto; }
 
 	.botones-prensa { width:80%; list-style:none; margin: auto; }
-		.botones-prensa li { }
+		.botones-prensa { margin-top:50px; }
 		.botones-prensa li a { width: 100%; padding: 5px; margin: 0 0 10px 0; display:block; color:#FFF; text-decoration:none; background:#00A0DD; font-size:16px; text-align:left; font-weight:normal; }
+		.botones-prensa li a#testimonial { display:none; }
 		.botones-prensa li a:hover { background-color:#2474A0; }
 		.botones-prensa li a.activo { background-color:#2474A0; cursor:default; font-weight:bold; }
 
@@ -189,7 +190,10 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 	.contenido-caso p { color:#5C6166; font-family:'hp_bold'; font-size:16px; float:left; margin-top: -30px;}
 		.contenido-caso p + a { width:160px; display:block; color:#FFF; text-decoration:none; background-color:#00A0DD; height:30px; font-size:16px; line-height:30px; text-align:left; padding-left: 3%; font-family:'hp_bold'; float:left; margin-left:10px; margin-top: -40px; }
 			.contenido-caso p + a:hover { background-color:#2474A0; }
+	.contenido-caso blockquote { font-family:'hp_regular'; font-size:20px; margin-top:-50px; margin-bottom:30px; background-color:rgb(245, 245, 245); }
+	.contenido-caso blockquote > p { font-size:16px;  float:right;  }
 .bloque-contenido { width:46%; margin-left:3%; margin-bottom: 5%; }
+	.bloque-contenido ul { height:80px; }
 	.bloque-contenido h3 { font-family: 'hp_bold'; font-size:14px; margin:5px 0; }
 
 .contenido-video { width: 60%; margin: 2% auto 0 auto; position: relative; padding-bottom: 36.25%; overflow: hidden; }

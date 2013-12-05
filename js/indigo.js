@@ -31,6 +31,13 @@ $( document ).ready(function() {
 		muestraInfoPrensas("prensa");
 		menuPrensas[0].addEventListener("click", cambiaTabPrensas, false);
 	}
+	
+	var menuPrensa = $(".menu-prensas ul");
+	if(menuPrensa[0] != null) {
+		muestraInfoPrensa("impresion");
+		menuPrensa[0].addEventListener("click", cambiaTabPrensa, false);
+	}
+	
 
 });
 
@@ -136,6 +143,20 @@ $( document ).ready(function() {
 	function cambiaTabPrensas(e){
 		var id = e.target.id;
 		muestraInfoPrensas(id);
+	} // cambiaTabCasos
+	
+	function muestraInfoPrensa(id) {
+		resetInfoPrensa();
+		$("#tb-"+id).css("display", "block");
+		$("#"+id).addClass("activo");
+	} // muestraInfoPrensas
+	function resetInfoPrensa() {
+		$(".menu-prensas ul li a").removeClass("activo");
+		$(".contenido-prensa").css("display", "none");
+	} // resetInfoPrensas
+	function cambiaTabPrensa(e){
+		var id = e.target.id;
+		muestraInfoPrensa(id);
 	} // cambiaTabCasos
 	
 	function slider() {
