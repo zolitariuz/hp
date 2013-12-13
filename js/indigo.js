@@ -2,7 +2,7 @@
  Proyecto:             HP Indigo
  Autores:              Raúl Z y Miguel C
  Cliente:              Litobel
- Última actualización: 31/10/2013
+ Última actualización: 12/13/2013
 *****************************************/
 
 $( document ).ready(function() {
@@ -31,6 +31,24 @@ $( document ).ready(function() {
 		muestraInfoPrensas("prensa");
 		menuPrensas[0].addEventListener("click", cambiaTabPrensas, false);
 	}
+	
+	var menuPrensa = $(".menu-prensas ul");
+	if(menuPrensa[0] != null) {
+		muestraInfoPrensa("impresion");
+		menuPrensa[0].addEventListener("click", cambiaTabPrensa, false);
+	}
+	
+	var menuAdicionales = $(".menu-adicionales ul");
+	if(menuAdicionales[0] != null) {
+		muestraInfoAdicionales("aurasma");
+		menuAdicionales[0].addEventListener("click", cambiaTabAdicionales, false);
+	}
+	
+	var menuHabilitadores = $(".menu-habilitadores ul");
+	if(menuHabilitadores[0] != null) {
+		muestraInfoHabilitadores("servicio");
+		menuHabilitadores[0].addEventListener("click", cambiaTabHabilitadores, false);
+	}
 
 	// var timeOut = 3000;
 	// window.setInterval(function(){
@@ -55,6 +73,8 @@ $( document ).ready(function() {
 	// 	$(this).hide();
 	// 	timeOut = 3000;
 	// });
+
+	jQuery('#videos').fitVids();
 
 });
 
@@ -162,6 +182,48 @@ $( document ).ready(function() {
 		muestraInfoPrensas(id);
 	} // cambiaTabCasos
 
+	function muestraInfoPrensa(id) {
+		resetInfoPrensa();
+		$("#tb-"+id).css("display", "block");
+		$("#"+id).addClass("activo");
+	} // muestraInfoPrensas
+	function resetInfoPrensa() {
+		$(".menu-prensas ul li a").removeClass("activo");
+		$("table").css("display", "none");
+	} // resetInfoPrensas
+	function cambiaTabPrensa(e){
+		var id = e.target.id;
+		muestraInfoPrensa(id);
+	} // cambiaTabCasos
+	
+	function muestraInfoAdicionales(id) {
+		resetInfoAdicionales();
+		$(".seccion-segmento#"+id).css("display", "block");
+		$("#"+id).addClass("activo");
+	} // muestraInfoPrensas
+	function resetInfoAdicionales() {
+		$(".menu-adicionales ul li a").removeClass("activo");
+		$(".seccion-segmento").css("display", "none");
+	} // resetInfoPrensas
+	function cambiaTabAdicionales(e){
+		var id = e.target.id;
+		muestraInfoAdicionales(id);
+	} // cambiaTabCasos
+	
+	function muestraInfoHabilitadores(id) {
+		resetInfoHabilitadores();
+		$(".seccion-segmento#"+id).css("display", "block");
+		$("#"+id).addClass("activo");
+	} // muestraInfoPrensas
+	function resetInfoHabilitadores() {
+		$(".menu-habilitadores ul li a").removeClass("activo");
+		$(".seccion-segmento").css("display", "none");
+	} // resetInfoPrensas
+	function cambiaTabHabilitadores(e){
+		var id = e.target.id;
+		muestraInfoHabilitadores(id);
+	} // cambiaTabCasos
+	
 	function slider() {
 		var numImg = $(".slider .control-slider li").length;
 		$(".slider .control-slider a").click(function(){
@@ -197,29 +259,6 @@ $( document ).ready(function() {
 		function limpiaImg() {
 			$(".slider img").removeClass("activo");
 		}
-	}
-
-	function jsResponsivo() {
-	// definir funciones especificas para diferentes tamaños de pantalla usando jRespond
-
-		var jRes = jRespond([
-			{
-				label: 'movil',
-				enter: 0,
-				exit: 481
-			}
-		]);
-
-		// funciones específicas para cada breakpoint
-		jRes.addFunc({
-			breakpoint: 'movil',
-			enter: function() {
-
-			},
-			exit: function() {
-
-			}
-		});
 	}
 
 	function lightboxVid() {
