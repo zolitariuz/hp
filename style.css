@@ -222,6 +222,7 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
        PRENSAS
  ********************/
 .prensas .divisor-gris { width:100%; border-bottom: 5px solid #BBBDC0; margin-top: -20px; }
+.prensas .divisor-gris { width:100%; border-bottom: 5px solid #BBBDC0; margin-top: -20px; }
 .prensas table { width:78%; margin-left:2%; margin-top:5%; font-family:'hp_bold'; color:#FFF; text-align:center; border:1px solid #FFF; }
 	.prensas table, .prensas table th, .prensas table td { border:1px solid #FFF; }
 	.prensas td.titulo { background-color: #C6C8CA; color:#52565A; font-size:16px; line-height:24px; }
