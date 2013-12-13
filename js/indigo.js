@@ -2,7 +2,7 @@
  Proyecto:             HP Indigo
  Autores:              Raúl Z y Miguel C
  Cliente:              Litobel
- Última actualización: 31/10/2013
+ Última actualización: 12/13/2013
 *****************************************/
 
 $( document ).ready(function() {
@@ -55,6 +55,8 @@ $( document ).ready(function() {
 	// 	$(this).hide();
 	// 	timeOut = 3000;
 	// });
+
+	jQuery('#videos').fitVids();
 
 });
 
