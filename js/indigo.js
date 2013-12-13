@@ -31,19 +31,19 @@ $( document ).ready(function() {
 		muestraInfoPrensas("prensa");
 		menuPrensas[0].addEventListener("click", cambiaTabPrensas, false);
 	}
-	
+
 	var menuPrensa = $(".menu-prensas ul");
 	if(menuPrensa[0] != null) {
 		muestraInfoPrensa("impresion");
 		menuPrensa[0].addEventListener("click", cambiaTabPrensa, false);
 	}
-	
+
 	var menuAdicionales = $(".menu-adicionales ul");
 	if(menuAdicionales[0] != null) {
 		muestraInfoAdicionales("aurasma");
 		menuAdicionales[0].addEventListener("click", cambiaTabAdicionales, false);
 	}
-	
+
 	var menuHabilitadores = $(".menu-habilitadores ul");
 	if(menuHabilitadores[0] != null) {
 		muestraInfoHabilitadores("servicio");
@@ -184,7 +184,7 @@ $( document ).ready(function() {
 
 	function muestraInfoPrensa(id) {
 		resetInfoPrensa();
-		$("#tb-"+id).css("display", "block");
+		$("#tb-"+id).css("display", "table");
 		$("#"+id).addClass("activo");
 	} // muestraInfoPrensas
 	function resetInfoPrensa() {
@@ -195,7 +195,7 @@ $( document ).ready(function() {
 		var id = e.target.id;
 		muestraInfoPrensa(id);
 	} // cambiaTabCasos
-	
+
 	function muestraInfoAdicionales(id) {
 		resetInfoAdicionales();
 		$(".seccion-segmento#"+id).css("display", "block");
@@ -209,7 +209,7 @@ $( document ).ready(function() {
 		var id = e.target.id;
 		muestraInfoAdicionales(id);
 	} // cambiaTabCasos
-	
+
 	function muestraInfoHabilitadores(id) {
 		resetInfoHabilitadores();
 		$(".seccion-segmento#"+id).css("display", "block");
@@ -223,7 +223,7 @@ $( document ).ready(function() {
 		var id = e.target.id;
 		muestraInfoHabilitadores(id);
 	} // cambiaTabCasos
-	
+
 	function slider() {
 		var numImg = $(".slider .control-slider li").length;
 		$(".slider .control-slider a").click(function(){

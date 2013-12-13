@@ -90,8 +90,8 @@ header h1 a { color: #000; text-decoration: none; }
 header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_regular'; color: #949699; font-size: 20px; }
 
 .subtitulo{ width: 100%; margin-bottom: 20px; padding-bottom: 20px; float: left; border-bottom: 3px solid #f5f6f7; }
-.subtitulo img{ width: 60px; height:60px; margin: 10px; }
-.subtitulo h2 { margin: 10px 0 10px 20px; font-family: 'hp_bold'; font-size: 32px; line-height:60px; }
+.subtitulo img{ width: 80px; height:80px; margin: 10px; }
+.subtitulo h2 { margin: 10px 0 10px 20px; font-family: 'hp_bold'; font-size: 32px; line-height:80px; }
 
 .regresa { width: 90%; height:auto; margin: 10px 0; display:block; }
 	.regresa img{ width: 16%; height: auto; border: none; float: left; }
@@ -222,7 +222,8 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
        PRENSAS
  ********************/
 .prensas .divisor-gris { width:100%; border-bottom: 5px solid #BBBDC0; margin-top: -20px; }
-.prensas table { width:78%; margin-left:2%; margin-top:5%; font-family:'hp_bold'; color:#FFF; text-align:center; border:1px solid #FFF; }
+.prensas .divisor-gris { width:100%; border-bottom: 5px solid #BBBDC0; margin-top: -20px; }
+.prensas table { width: 80%; margin-left:2%; margin-top:5%; font-family:'hp_bold'; color:#FFF; text-align:center; border:1px solid #FFF; }
 	.prensas table, .prensas table th, .prensas table td { border:1px solid #FFF; }
 	.prensas td.titulo { background-color: #C6C8CA; color:#52565A; font-size:16px; line-height:24px; }
 		.prensas td a { width: 100%; display:block; color:#FFF; text-decoration:none; background-color:#00A0DD; font-size:16px; line-height:30px; text-align:left; padding-left: 3%; font-family:'hp_regular'; margin-bottom:5px; }
@@ -483,7 +484,7 @@ and (max-width : 620px) {
 
 	/* SINGLE PRENSA */
 	.menu-vertical{ display: none;}
-	.menu-horizontal { width: 100%; display: block; margin: 0; list-style: none; }
+	.menu-horizontal { width: 100%; display: block; margin: 0; list-style: none; position: relative; z-index: 1; }
 		.menu-horizontal li { width: 19%;  margin: 0 0.5%; float:left; position: relative; }
 		.menu-horizontal li a { width: 100%; padding: 1%; color: #fff; text-decoration: none; text-align: center; background: #e95446; display:block;  }
 		.menu-horizontal li a:hover { background: #c03531; }
@@ -521,6 +522,8 @@ and (max-width : 480px) {
 	header h1 { height: 75px; line-height: 75px; font-size: 20px; }
 	header .instruccion { font-size: 20px; }
 
+	.subtitulo img{ margin: auto; float: none; display: block; }
+	.subtitulo h2{ width: 100%; margin: 0; text-align: center; }
 
 	/* HOME */
 	.aplicacion_boton a h4 { font-size: 10px; }
@@ -536,6 +539,9 @@ and (max-width : 480px) {
 	.menu-prensas { width: 100%; float: none; }
 	.menu-prensas ul li{ width: 23%; height: 70px; margin: 0 1% 1em 1%; float: left; border: none;  }
 	.menu-prensas ul li a{  }
+
+	.menu-prensas.prensa ul li{ width: 100%; height: 40px; margin: 0 0 1em 0; float: none; border: none;  }
+	.menu-prensas.prensa ul li a{ padding: 10px; }
 
 	.panel-historias .regresa img{   }
 	.panel-historias .regresa p{ line-height: 30px; }
@@ -566,10 +572,19 @@ and (max-width : 480px) {
 	.lightbox-container .lightbox-media { width:95%; }
 	.lightbox-media a { width:30px; height:30px; display:block; float:right; margin-top: -30px;}
 	.lightbox-media a img { width:100%; height:auto;}
-	.lightbox-container .lightbox-media h2 { font-size:26px; margin-top: 0; line-height:26px; padding-top:10px; }
+	.lightbox-container .lightbox-media h2 { font-size:18px; margin-top: 0; line-height:26px; padding-top:10px; }
 
 
 }
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (max-width : 321px) {
+
+	.lightbox-container .lightbox-media{ width: 80%; }
+
+}
+
 
 /* Smartphones (portrait) ----------- */
 @media only screen
@@ -579,7 +594,7 @@ and (max-width : 320px) {
 
 	.panel-historias .regresa p{ line-height: 25px; }
 
-	.menu-horizontal { background: #fff; padding-top: 5px; position: fixed; bottom: 0; z-index: 9999; }
+	.menu-horizontal { width: 90%; background: #fff; padding-top: 5px; position: fixed; bottom: 0; z-index: 10; }
 		.menu-horizontal li {  }
 		.menu-horizontal li a {  }
 		.menu-horizontal li a:hover {  }
