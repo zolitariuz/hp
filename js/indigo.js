@@ -14,7 +14,7 @@ $( document ).ready(function() {
 	// SEGMENTOS
 	var menuIzq = document.getElementById("menu_segmentos");
 	if ( menuIzq != null ) {
-		muestraInfo("tendencias"); // mostrar por default pestaña "aplicaciones en los segmentos"
+		muestraInfo("soluciones"); // mostrar por default pestaña "aplicaciones en los segmentos"
 		menuIzq.addEventListener("click", cambiaTab, false); // detecta que opción del menú izquierdo fue "clickeada" y cambia la info
 	}
 
@@ -183,9 +183,11 @@ $( document ).ready(function() {
 	} // cambiaTabCasos
 
 	function muestraInfoPrensa(id) {
-		resetInfoPrensa();
-		$("#tb-"+id).css("display", "table");
-		$("#"+id).addClass("activo");
+		if(id != "herramientas"){
+			resetInfoPrensa();
+			$("#tb-"+id).css("display", "table");
+			$("#"+id).addClass("activo");
+		}
 	} // muestraInfoPrensas
 	function resetInfoPrensa() {
 		$(".menu-prensas ul li a").removeClass("activo");
@@ -211,9 +213,11 @@ $( document ).ready(function() {
 	} // cambiaTabCasos
 
 	function muestraInfoHabilitadores(id) {
-		resetInfoHabilitadores();
-		$(".seccion-segmento#"+id).css("display", "block");
-		$("#"+id).addClass("activo");
+		if(id !== "herramientas") {
+			resetInfoHabilitadores();
+			$("#"+id).addClass("activo");
+			$(".seccion-segmento#"+id).css("display", "block");
+		}
 	} // muestraInfoPrensas
 	function resetInfoHabilitadores() {
 		$(".menu-habilitadores ul li a").removeClass("activo");
@@ -224,40 +228,83 @@ $( document ).ready(function() {
 		muestraInfoHabilitadores(id);
 	} // cambiaTabCasos
 
-	function slider() {
-		var numImg = $(".slider .control-slider li").length;
-		$(".slider .control-slider a").click(function(){
+	function slider(idSlider) {
+		if(idSlider == null){
+			var sl = ".slider"	
+		} 
+		var numImg = $(sl + " .control-slider li").length;
+		$(sl + " .control-slider a").click(function(){
 			var id = $(this).attr("id");
 			id = id.replace("control-", "");
 			limpiaControl();
 			$(this).addClass("activo");
 			limpiaImg();
-			$(".slider img#" + id).addClass("activo");
+			$(sl +" img#" + id).addClass("activo");
 		});
-		$(".slider .flecha-der").click(function() {
-			var activo = $(".slider img.activo").attr("id");
+		$(sl +" .flecha-der").click(function() {
+			var activo = $(sl +" img.activo").attr("id");
 			limpiaImg();
 			limpiaControl();
 			activo = parseInt(activo) + 1;
 			if(activo > numImg) activo = 1;
-			$(".slider img#" + activo).addClass("activo");
-			$(".slider .control-slider a#control-" + activo).addClass("activo");
+			$(sl +" img#" + activo).addClass("activo");
+			$(sl +" .control-slider a#control-" + activo).addClass("activo");
 		});
-		$(".slider .flecha-izq").click(function() {
-			var activo = $(".slider img.activo").attr("id");
+		$(sl +" .flecha-izq").click(function() {
+			var activo = $(sl +" img.activo").attr("id");
 			limpiaImg();
 			limpiaControl();
 			activo = parseInt(activo) - 1;
 			if(activo < 1) activo = numImg;
-			$(".slider img#" + activo).addClass("activo");
-			$(".slider .control-slider a#control-" + activo).addClass("activo");
+			$(sl +" img#" + activo).addClass("activo");
+			$(sl +" .control-slider a#control-" + activo).addClass("activo");
 		});
 
 		function limpiaControl() {
-			$(".slider .control-slider a").removeClass("activo");
+			$(sl +" .control-slider a").removeClass("activo");
 		}
 		function limpiaImg() {
-			$(".slider img").removeClass("activo");
+			$(sl +" img").removeClass("activo");
+		}
+	}
+
+	function slider1(idSlider) {
+		if(idSlider == null){
+			var sl = ".slider1"	
+		} 
+		var numImg = $(sl + " .control-slider li").length;
+		$(sl + " .control-slider a").click(function(){
+			var id = $(this).attr("id");
+			id = id.replace("control-", "");
+			limpiaControl();
+			$(this).addClass("activo");
+			limpiaImg();
+			$(sl +" img#" + id).addClass("activo");
+		});
+		$(sl +" .flecha-der").click(function() {
+			var activo = $(sl +" img.activo").attr("id");
+			limpiaImg();
+			limpiaControl();
+			activo = parseInt(activo) + 1;
+			if(activo > numImg) activo = 1;
+			$(sl +" img#" + activo).addClass("activo");
+			$(sl +" .control-slider a#control-" + activo).addClass("activo");
+		});
+		$(sl +" .flecha-izq").click(function() {
+			var activo = $(sl +" img.activo").attr("id");
+			limpiaImg();
+			limpiaControl();
+			activo = parseInt(activo) - 1;
+			if(activo < 1) activo = numImg;
+			$(sl +" img#" + activo).addClass("activo");
+			$(sl +" .control-slider a#control-" + activo).addClass("activo");
+		});
+
+		function limpiaControl() {
+			$(sl +" .control-slider a").removeClass("activo");
+		}
+		function limpiaImg() {
+			$(sl +" img").removeClass("activo");
 		}
 	}
 

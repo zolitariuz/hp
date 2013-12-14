@@ -346,15 +346,35 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
         .lightbox-container .lightbox-media iframe { width:100%; height:auto; }
         .lightbox-container .lightbox-media h2 { font-size:36px; color:#FFF; font-family: 'hp_regular'; margin-top:10px; margin-bottom:0; line-height:36px; padding-top:20px; }
 
+/* esconder video tendencias temporalmente */
+#menu_segmentos ul li:first-child { display:none; }
+
 /* pantalla grande ----------- */
 @media only screen
 and (min-width : 1350px){
 	/* HOME */
+	header { padding-bottom:15px;}
 	header h1{ font-size:52px; line-height:110px; }
+	header .logo { margin-right:40px; }
 	header .logo img { width: 110px; height: 110px; }
 	.menu-vertical ul li a p { font-size:18px; }
 	.aplicacion_boton a h4 { font-size:24px; }
-
+	
+	.subtitulo img { width:90px; height:90px; }
+	.subtitulo h2 { font-size: 40px; line-height:90px; }
+	
+	/*SEGMENTOS */
+	.descripcion img { width:9%; }
+	.descripcion .info_aplicacion h2 { font-size:32px; }
+	.descripcion .info_aplicacion p { font-size:20px; } 
+	#menu_segmentos ul li a { font-size:24px; }
+	.seccion-segmento > ul li a { font-size:20px; padding:20px 0px 10px 25px; height:100px; }
+	.menu-vertical ul li a p { font-size:20px; }
+	
+	/* HISTORIAS */
+	.historia h3 { font-size:24px; }
+	.historia .botones-historia li a { height:45px; line-height:38px; font-size:20px;}
+	
 	/* PRENSAS */
 	.panel-prensas h2 { font-size: 36px; }
 	.panel-prensas h3 { font-size: 24px; }
