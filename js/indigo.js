@@ -230,56 +230,20 @@ $( document ).ready(function() {
 
 	function slider(idSlider) {
 		if(idSlider == null){
-			var sl = ".slider"	
-		} 
-		var numImg = $(sl + " .control-slider li").length;
-		$(sl + " .control-slider a").click(function(){
+			var sl = ".slider";	
+			var cs = ".control-slider";
+		} else {
+			var sl = ".slider-" + idSlider;
+			var cs = ".control-slider-" + idSlider;
+		}
+		var numImg = $(sl + " " + cs + " li").length;
+		$(sl + " " + cs + " a").click(function(){
 			var id = $(this).attr("id");
 			id = id.replace("control-", "");
 			limpiaControl();
 			$(this).addClass("activo");
 			limpiaImg();
-			$(sl +" img#" + id).addClass("activo");
-		});
-		$(sl +" .flecha-der").click(function() {
-			var activo = $(sl +" img.activo").attr("id");
-			limpiaImg();
-			limpiaControl();
-			activo = parseInt(activo) + 1;
-			if(activo > numImg) activo = 1;
-			$(sl +" img#" + activo).addClass("activo");
-			$(sl +" .control-slider a#control-" + activo).addClass("activo");
-		});
-		$(sl +" .flecha-izq").click(function() {
-			var activo = $(sl +" img.activo").attr("id");
-			limpiaImg();
-			limpiaControl();
-			activo = parseInt(activo) - 1;
-			if(activo < 1) activo = numImg;
-			$(sl +" img#" + activo).addClass("activo");
-			$(sl +" .control-slider a#control-" + activo).addClass("activo");
-		});
-
-		function limpiaControl() {
-			$(sl +" .control-slider a").removeClass("activo");
-		}
-		function limpiaImg() {
-			$(sl +" img").removeClass("activo");
-		}
-	}
-
-	function slider1(idSlider) {
-		if(idSlider == null){
-			var sl = ".slider1"	
-		} 
-		var numImg = $(sl + " .control-slider li").length;
-		$(sl + " .control-slider a").click(function(){
-			var id = $(this).attr("id");
-			id = id.replace("control-", "");
-			limpiaControl();
-			$(this).addClass("activo");
-			limpiaImg();
-			$(sl +" img#" + id).addClass("activo");
+			$(cs +" img#" + id).addClass("activo");
 		});
 		$(sl +" .flecha-der").click(function() {
 			var activo = $(sl +" img.activo").attr("id");
