@@ -42,6 +42,8 @@ $( document ).ready(function() {
 	if(menuAdicionales[0] != null) {
 		muestraInfoAdicionales("aurasma");
 		menuAdicionales[0].addEventListener("click", cambiaTabAdicionales, false);
+		console.log('g');
+		jQuery('#indigo-env').fitVids();
 	}
 
 	var menuHabilitadores = $(".menu-habilitadores ul");
@@ -73,8 +75,6 @@ $( document ).ready(function() {
 	// 	$(this).hide();
 	// 	timeOut = 3000;
 	// });
-
-	jQuery('#videos').fitVids();
 
 });
 
@@ -230,8 +230,8 @@ $( document ).ready(function() {
 
 	function slider(idSlider) {
 		if(idSlider == null){
-			var sl = ".slider"	
-		} 
+			var sl = ".slider"
+		}
 		var numImg = $(sl + " .control-slider li").length;
 		$(sl + " .control-slider a").click(function(){
 			var id = $(this).attr("id");
@@ -270,8 +270,8 @@ $( document ).ready(function() {
 
 	function slider1(idSlider) {
 		if(idSlider == null){
-			var sl = ".slider1"	
-		} 
+			var sl = ".slider1"
+		}
 		var numImg = $(sl + " .control-slider li").length;
 		$(sl + " .control-slider a").click(function(){
 			var id = $(this).attr("id");
@@ -359,3 +359,10 @@ $( document ).ready(function() {
 	    	);
 	    });
 	}
+
+	//Fitvids
+	$(function(){
+		$('.video').fitVids();
+		//jQuery('#videos').fitVids();
+	});
+
