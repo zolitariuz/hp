@@ -371,6 +371,7 @@ and (min-width : 1350px){
 	/* HISTORIAS */
 	.historia h3 { font-size:24px; }
 	.historia .botones-historia li a { height:45px; line-height:38px; font-size:20px;}
+	.panel-historias p { font-size:20px; line-height:40px; }
 
 	/* PRENSAS */
 	.panel-prensas h2 { font-size: 36px; }

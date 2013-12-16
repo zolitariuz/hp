@@ -173,8 +173,8 @@
             </div><!-- content -->
             <div class="lightbox-container">
                 <div class="lightbox-media">
-                    <div class="frame-video">
-                        <iframe src="//www.youtube.com/embed/eqOYlnyGBs4" frameborder="0" allowfullscreen></iframe>
+                    <div class="frame-video" id="yt-video">
+                        <iframe src="http://www.youtube.com/embed/eqOYlnyGBs4" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <h2>HP Indigo 7600</h2>
                     <a href="#">
@@ -258,6 +258,7 @@
     <script>
 		slider();
         lightboxIFrame();
+		callPlayer('yt-video', 'playVideo');
 	</script>
 </body>
 </html>
