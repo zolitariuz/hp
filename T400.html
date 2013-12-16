@@ -165,11 +165,11 @@ Hasta 100 millones de im&aacute;genes tamaño carta a todo color y hasta 140 mil
             </div><!-- content -->
             <div class="lightbox-container">
                 <div class="lightbox-media">
-                    <div class="frame-video">
-                        <iframe src="//www.youtube.com/embed/AjIDOtRmf4A" frameborder="0" allowfullscreen></iframe>
+                    <div class="frame-video" id="yt-video">
+                        <iframe src="http//www.youtube.com/embed/AjIDOtRmf4A" frameborder="0" allowfullscreen></iframe>
                     </div><!-- frame-video -->
                     <h2>HP T400 Color Inkjet Web Press</h2>
-                    <a href="#">
+                    <a href="javascript:void callPlayer(&quot;yt-video&quot;,&quot;stopVideo&quot;)">
                         <img src="images/cerrar.png" />
                     </a>
                 </div>
@@ -251,6 +251,7 @@ Hasta 100 millones de im&aacute;genes tamaño carta a todo color y hasta 140 mil
     <script>
 		slider();
         lightboxIFrame();
+		callPlayer('yt-video', 'stopVideo');
 	</script>
 </body>
 </html>

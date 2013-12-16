@@ -165,11 +165,11 @@
             </div><!-- content -->
             <div class="lightbox-container">
                 <div class="lightbox-media">
-                    <div class="frame-video">
+                    <div class="frame-video" id="yt-video">
                         <iframe src="http://www.youtube.com/embed/Kx_VOJzpfBM" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <h2>HP Indigo W7250</h2>
-                    <a href="#">
+                    <a href="javascript:void callPlayer(&quot;yt-video&quot;,&quot;stopVideo&quot;)">
                         <img src="images/cerrar.png" />
                     </a>
                 </div>
@@ -250,6 +250,7 @@
     <script>
 		slider();
         lightboxIFrame();
+		callPlayer('yt-video', 'stopVideo');
 	</script>
 </body>
 </html>
