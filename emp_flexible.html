@@ -61,7 +61,10 @@
                 <div class="main-content left">
                     <div class="seccion-segmento" id="aplicaciones">
                     	<ul>
-                        	<li><a href="#">...Workflow...</a></li>
+                        	<li><a href="#" id="comida">Empaque para comida</a></li>
+                            <li><a href="#" id="articulos">Artículos domésticos</a></li>
+                            <li><a href="#" id="salud">Productos de salud y belleza</a></li>
+                            <li><a href="#" id="industriales">Productos industriales</a></li>
                         </ul>
                     </div>
                     <div class="seccion-segmento" id="soluciones">
@@ -78,6 +81,20 @@
                     </div><!-- videos -->
                 </div><!-- main_content -->
             </div><!-- content -->
+            <div class="lightbox-container">
+                <div class="lightbox-media">
+                    <div class="frame-img">
+                        <img src="images/aplicaciones/flexible.JPG" alt="Empaque para comida" id="img-comida" />
+                        <img src="images/aplicaciones/flexible_domésticos.JPG" alt="Artículos domésticos" id="img-articulos" />
+                        <img src="images/aplicaciones/flexible_salud.jpg" alt="Productos de salud y belleza" id="img-salud" />
+                        <img src="images/aplicaciones/flexible.JPG" alt="Productos industriales" id="img-industriales" />
+                    </div>
+                    <h2></h2>
+                    <a href="#">
+                        <img src="images/cerrar.png" />
+                    </a>
+                </div>
+            </div> <!-- lightbox -->
             <div class="menu-vertical right">
                 <ul>
                     <li>
@@ -153,5 +170,8 @@
     <!-- js aquí para mejorar rendimiento -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/indigo.js"></script>
+    <script>
+		lightboxImg();
+	</script>
 </body>
 </html>

@@ -65,11 +65,11 @@
 
                     <div class="seccion-segmento" id="aplicaciones">
                     	<ul>
-                        	<li><a href="#">Brochures y manuales</a></li>
-							<li><a href="#" class="bt_aplicaciones">Tarjetas de presentación</a></li>
-							<li><a href="#" class="bt_aplicaciones">Flyers</a></li>
-                            <li><a href="#" class="bt_aplicaciones">Manuales y calendarios<br /> (con espiral)</a></li>
-							<li><a href="#" class="bt_aplicaciones">Postales, invitaciones y<br /> tarjetas de felicitación</a></li>
+                        	<li><a href="#" id="brochures">Brochures y manuales</a></li>
+							<li><a href="#" id="tarjetas" class="bt_aplicaciones">Tarjetas de presentación</a></li>
+							<li><a href="#" id="flyers" class="bt_aplicaciones">Flyers</a></li>
+                            <li><a href="#" id="manuales" class="bt_aplicaciones">Manuales y calendarios<br /> (con espiral)</a></li>
+							<li><a href="#" id="postales" class="bt_aplicaciones">Postales, invitaciones y<br /> tarjetas de felicitación</a></li>
                         </ul>
                     </div><!-- seccion-segmento -->
 
@@ -92,7 +92,21 @@
                     </div><!-- videos -->
                 </div><!-- main_content -->
             </div><!-- content -->
-
+			<div class="lightbox-container">
+                <div class="lightbox-media">
+                    <div class="frame-img">
+                        <img src="images/aplicaciones/brochures.JPG" alt="Brochures y manuales" id="img-brochures" />
+                        <img src="images/aplicaciones/tarjetas.JPG" alt="Tarjetas de presentación" id="img-tarjetas" />
+                        <img src="images/aplicaciones/flyers.jpg" alt="Flyers" id="img-flyers" />
+                        <img src="images/aplicaciones/calendario.JPG" alt="Manuales y calendarios" id="img-manuales" />
+                        <img src="images/aplicaciones/postales.JPG" alt="Postales, invitaciones y tarjetas de felicitación" id="img-postales" />
+                    </div>
+                    <h2></h2>
+                    <a href="#">
+                        <img src="images/cerrar.png" />
+                    </a>
+                </div>
+            </div> <!-- lightbox -->
             <div class="menu-vertical right">
                 <ul>
                     <li>
@@ -171,5 +185,8 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/fitvids.js"></script>
     <script type="text/javascript" src="js/indigo.js"></script>
+    <script>
+		lightboxImg();
+	</script>
 </body>
 </html>

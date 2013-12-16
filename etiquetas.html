@@ -58,7 +58,10 @@
                 <div class="main-content left">
                     <div class="seccion-segmento" id="aplicaciones">
                     	<ul>
-                        	<li><a href="#">...Workflow...</a></li>
+                        	<li><a href="#" id="comida">Etiquetas para comida y bebidas</a></li>
+                            <li><a href="#" id="farma">Productos farmacéuticos</a></li>
+                            <li><a href="#" id="cosmeticos">Cosméticos</a></li>
+                            <li><a href="#" id="domesticos">Artículos domésticos</a></li>
                         </ul>
                     </div>
                     <div class="seccion-segmento" id="soluciones">
@@ -76,6 +79,20 @@
                     </div><!-- videos -->
                 </div><!-- main_content -->
             </div><!-- content -->
+            <div class="lightbox-container">
+                <div class="lightbox-media">
+                    <div class="frame-img">
+                        <img src="images/aplicaciones/etiquetas.JPG" alt="Etiquetas para comida y bebidas" id="img-comida" />
+                        <img src="images/aplicaciones/farmaceuticos.JPG" alt="Productos farmacéuticos" id="img-farma" />
+                        <img src="images/aplicaciones/cosméticos.JPG" alt="Cosméticos" id="img-cosmeticos" />
+                        <img src="images/aplicaciones/domésticos.JPG" alt="Artículos domésticos" id="img-domesticos" />
+                    </div>
+                    <h2></h2>
+                    <a href="#">
+                        <img src="images/cerrar.png" />
+                    </a>
+                </div>
+            </div> <!-- lightbox -->
             <div class="menu-vertical right">
                 <ul>
                     <li>
@@ -151,5 +168,8 @@
     <!-- js aquí para mejorar rendimiento -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/indigo.js"></script>
+    <script>
+		lightboxImg();
+	</script>
 </body>
 </html>

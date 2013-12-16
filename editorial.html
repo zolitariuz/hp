@@ -61,15 +61,17 @@
                 <div class="main-content left">
                     <div class="seccion-segmento" id="aplicaciones">
                     	<ul class="clearfix">
-                        	<li><a href="#">Libro de pasta dura <br />(Indigo + Inkjet Web Press)</a></li>
-							<li><a href="#">Libro de pasta dura <br />(Indigo)</a></li>
-							<li><a href="#">Publicaci&oacute;n engrapada a caballo <br />(Indigo)</a></li>
-                            <li><a href="#">Publicaci&oacute;n engrapada a caballo <br />(Indigo + Web Press)</a></li>
-							<li><a href="#">Publicaciones personalizadas con tapa blanda (Indigo + Inkjet Web Press)</a></li>
-							<li><a href="#">Publicaciones personalizadas <br />con tapa blanda (Indigo)</a></li>
-                            <li><a href="#">Publicaci&oacute;n con tapa blanda <br />(Indigo + Inkjet Web Press)</a></li>
-							<li><a href="#">Publicaci&oacute;n con tapa blanda <br />(Indigo)</a></li>
-							<li><a href="#">Acabado con espiral <br />(Inkjet Web Press)</a></li>
+                        	<li><a href="#" id="encargo">Libros por encargo</a></li>
+							<li><a href="#" id="personalizados">Libros personalizados</a></li>
+							<li><a href="#" id="consumidores">Libros para consumidores</a></li>
+                            <li><a href="#" id="cubiertas">Cubiertas y fundas</a></li>
+							<li><a href="#" id="texto">Libros de texto</a></li>
+							<li><a href="#" id="periodicos">Periódicos</a></li>
+                            <li><a href="#" id="revistas">Revistas</a></li>
+							<li><a href="#" id="catalogos">Catálogos</a></li>
+							<li><a href="#" id="manuales">Manuales técnicos</a></li>
+                            <li><a href="#" id="documentos">Documentos legales y médicos</a></li>
+                            <li><a href="#" id="publicaciones">Publicaciones científicas</a></li>
                         </ul>
                     </div>
                     <div class="seccion-segmento " id="soluciones">
@@ -88,6 +90,27 @@
                     </div><!-- videos -->
                 </div><!-- main_content -->
             </div><!-- content -->
+            <div class="lightbox-container">
+                <div class="lightbox-media">
+                    <div class="frame-img">
+                        <img src="images/aplicaciones/encargo.JPG" alt="Libros por encargo" id="img-encargo" />
+                        <img src="images/aplicaciones/personalizados.JPG" alt="Libros personalizados" id="img-personalizados" />
+                        <img src="images/aplicaciones/consumidor.jpg" alt="Libros para consumidores" id="img-consumidores" />
+                        <img src="images/aplicaciones/cubiertas.JPG" alt="Cubiertas y fundas" id="img-cubiertas" />
+                        <img src="images/aplicaciones/texto.JPG" alt="Libros de texto" id="img-texto" />
+                        <img src="images/aplicaciones/periódicos.JPG" alt="Periódicos" id="img-periodicos" />
+                        <img src="images/aplicaciones/revistas.JPG" alt="Revistas" id="img-revistas" />
+                        <img src="images/aplicaciones/catálogos.JPG" alt="Catálogos" id="img-catalogos" />
+                        <img src="images/aplicaciones/técnicos.JPG" alt="Manuales técnicos" id="img-manuales" />
+                        <img src="images/aplicaciones/legal.JPG" alt="Documentos legales y médicos" id="img-documentos" />
+                        <img src="images/aplicaciones/científicos.JPG" alt="Publicaciones científicas" id="img-publicaciones" />
+                    </div>
+                    <h2></h2>
+                    <a href="#">
+                        <img src="images/cerrar.png" />
+                    </a>
+                </div>
+            </div> <!-- lightbox -->
             <div class="menu-vertical right">
                 <ul>
                     <li>
@@ -164,5 +187,8 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jRespond.js"></script>
     <script type="text/javascript" src="js/indigo.js"></script>
+    <script>
+		lightboxImg();
+	</script>
 </body>
 </html>

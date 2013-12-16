@@ -65,16 +65,13 @@
 
                     <div class="seccion-segmento" id="aplicaciones">
                     	<ul>
-                        	<li><a href="#">Agenda personalizada (De pequeño a mediano volumen)</a></li>
-							<li><a href="#" class="bt_aplicaciones">Agenda personalizada (De mediano a gran volumen)</a></li>
-							<li><a href="#" class="bt_aplicaciones">Álbum fotográfico pasta dura - Impresión de pliego</a></li>
-                            <li><a href="#" class="bt_aplicaciones">Álbum fotográfico pasta dura - Impresión de rollo</a></li>
-							<li><a href="#" class="bt_aplicaciones">Álbum fotográfico pasta dura con guardas impresas – Impresión de rollo</a></li>                            <li><a href="#" class="bt_aplicaciones">Foto con acabado plano (Layflat)</a></li>
-                            <li><a href="#" class="bt_aplicaciones">Foto retrato (Gran volumen)</a></li>
-                            <li><a href="#" class="bt_aplicaciones">Foto postal y tarjeta de felicitación</a></li>
-                            <li><a href="#" class="bt_aplicaciones">Álbum fotográfico con tapa suave</a></li>
-                            <li><a href="#" class="bt_aplicaciones">Álbum fotográfico con tapa suave – Impresión en rollo</a></li>
-                            <li><a href="#" class="bt_aplicaciones">Calendario con espiral</a></li>
+                        	<li><a href="#" id="tarjetas">Tarjetas de felicitación plegables </a></li>
+							<li><a href="#" id="postales" class="bt_aplicaciones">Postales</a></li>
+							<li><a href="#" id="tapa-blanda" class="bt_aplicaciones">Libros de fotos tapa blanda </a></li>
+                            <li><a href="#" id="tapa-dura" class="bt_aplicaciones">Libros de fotos tapa dura </a></li>
+							<li><a href="#" id="calendario" class="bt_aplicaciones">Calendarios de pared </a></li>                            <li><a href="#" id="calendario-esc" class="bt_aplicaciones">Calendarios de escritorio </a></li>
+                            <li><a href="#" id="calendario-cum" class="bt_aplicaciones">Calendarios de cumpleaños </a></li>
+                            <li><a href="#" id="anuarios" class="bt_aplicaciones">Anuarios</a></li>
                         </ul>
                     </div>
 
@@ -99,6 +96,24 @@
 
                 </div><!-- main_content -->
             </div><!-- content -->
+            <div class="lightbox-container">
+                <div class="lightbox-media">
+                    <div class="frame-img">
+                        <img src="images/aplicaciones/plegables.JPG" alt="Tarjetas de felicitación plegables" id="img-tarjetas" />
+                        <img src="images/aplicaciones/postales.JPG" alt="Postales" id="img-postales" />
+                        <img src="images/aplicaciones/consumer.jpg" alt="Libros de fotos tapa blanda" id="img-tapa-blanda" />
+                        <img src="images/aplicaciones/profesional.jpg" alt="Libros de fotos tapa dura" id="img-tapa-dura" />
+                        <img src="images/aplicaciones/calendario.jpg" alt="Calendarios de pared" id="img-calendario" />
+                        <img src="images/aplicaciones/escritorio.JPG" alt="Calendarios de escritorio" id="img-calendario-esc" />
+                        <img src="images/aplicaciones/cumpleaños.JPG" alt="Calendarios de cumpleaños" id="img-calendario-cum" />
+                        <img src="images/aplicaciones/consumer.JPG" alt="Anuarios" id="img-anuarios" />
+                    </div>
+                    <h2></h2>
+                    <a href="#">
+                        <img src="images/cerrar.png" />
+                    </a>
+                </div>
+            </div> <!-- lightbox -->
             <div class="menu-vertical right">
                 <ul>
                     <li>
@@ -175,5 +190,8 @@
     <!-- js aquí para mejorar rendimiento -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/indigo.js"></script>
+    <script>
+		lightboxImg();
+	</script>
 </body>
 </html>

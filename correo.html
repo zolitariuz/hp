@@ -63,13 +63,11 @@ Aumente el valor de los envíos de transacciones de los clientes con las prensas
                 <div class="main-content left">
                     <div class="seccion-segmento" id="aplicaciones">
                     	<ul class="clearfix">
-                        	<li><a href="#">Cartas – Alto volumen <br />(Indigoo)</a></li>
-                            <li><a href="#">Cartas – Alto volumen <br />(Inkjet)</a></li>
-                            <li><a href="#">Correo directo – Bajo volumen</a></li>
-                            <li><a href="#">Postales por correo directo <br />Alto volumen (Indigo)</a></li>
-                            <li><a href="#">Postales por correo directo  <br />Alto volumen (Inkjet)</a></li>
-                            <li><a href="#">Postales por correo directo  <br />Bajo volumen)</a></li>
-                            <li><a href="#">Transpromocional</a></li>
+                        	<li><a href="#" id="postales">Postales</a></li>
+                            <li><a href="#" id="correo">Correo directo</a></li>
+                            <li><a href="#" id="autofranqueados">Autofranqueados</a></li>
+                            <li><a href="#" id="transaccional">Impresión transaccional</a></li>
+                            <li><a href="#" id="politicas">Políticas y notas reguladoras</a></li>
                         </ul>
                     </div>
                     <div class="seccion-segmento" id="soluciones">
@@ -88,6 +86,21 @@ Aumente el valor de los envíos de transacciones de los clientes con las prensas
                     </div><!-- videos -->
                 </div><!-- main_content -->
             </div><!-- content -->
+            <div class="lightbox-container">
+                <div class="lightbox-media">
+                    <div class="frame-img">
+                        <img src="images/aplicaciones/postales.JPG" alt="Postales" id="img-postales" />
+                        <img src="images/aplicaciones/correo.JPG" alt="Correo directo" id="img-correo" />
+                        <img src="images/aplicaciones/autofranqueados.jpg" alt="Autofranqueados" id="img-autofranqueados" />
+                        <img src="images/aplicaciones/transaccional.JPG" alt="Impresión transaccional" id="img-transaccional" />
+                        <img src="images/aplicaciones/políticas.JPG" alt="Políticas y notas reguladoras" id="img-politicas" />
+                    </div>
+                    <h2></h2>
+                    <a href="#">
+                        <img src="images/cerrar.png" />
+                    </a>
+                </div>
+            </div> <!-- lightbox -->
             <div class="menu-vertical right">
                 <ul>
                     <li>
@@ -163,5 +176,8 @@ Aumente el valor de los envíos de transacciones de los clientes con las prensas
     <!-- js aquí para mejorar rendimiento -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/indigo.js"></script>
+    <script>
+		lightboxImg();
+	</script>
 </body>
 </html>

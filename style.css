@@ -199,6 +199,8 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 .contenido-video { width: 60%; margin: 2% auto 0 auto; position: relative; padding-bottom: 36.25%; overflow: hidden; }
 .contenido-video .frame-video { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
 .contenido-video .frame-video iframe{ height: 100% !important; position: absolute; top: 0; left: 0; width: 100%; }
+.frame-img { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+.frame-img img{ height: 100%; position: absolute; top: 0; left: 0; width: 100%; }
 .contenido-slider-historias { width:100%; margin-top:0; padding-left:2%; margin-left:0; }
 .contenido-slider-historias .slider { width:90%; position: relative; }
 .contenido-slider-historias img { width:80%; display:none; margin-left:10%; }
@@ -333,7 +335,7 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 			-webkit-border-bottom-left-radius: 15px;
 			-moz-border-radius-topright: 15px;
 			-moz-border-radius-bottomleft: 15px;}
-        .lightbox-media a { width:50px; height:50px; display:block; float:right; margin-top: -40px;}
+        .lightbox-media a { width:50px; height:50px; display:block; float:right; margin-top: -30px;}
             .lightbox-media a img { width:100%; height:auto;}
         .lightbox-container .lightbox-media video { width:100%; height:auto;}
         .lightbox-container .frame-video { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }

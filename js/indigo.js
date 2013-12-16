@@ -238,10 +238,6 @@ $( document ).ready(function() {
 		}
 		var numImg = $(sl + " " + cs + " li").length;
 		$(sl + " " + cs + " a").click(function(){
-			var sl = ".slider"
-		}
-		var numImg = $(sl + " .control-slider li").length;
-		$(sl + " .control-slider a").click(function(){
 			var id = $(this).attr("id");
 			id = id.replace("control-", "");
 			limpiaControl();
@@ -366,6 +362,34 @@ $( document ).ready(function() {
 	    		{ scrollTop:0 }, '500'
 	    	);
 	    });
+	}
+	
+	function lightboxImg() {
+	    $("#aplicaciones ul li a").click(function () {
+			var id = $(this).attr("id");
+			
+			escondeImgLightbox();
+			
+			$(".frame-img img#img-" + id).css("display", "block");
+	        var titulo = $(".frame-img img#img-" + id).attr("alt");
+			$(".lightbox-media h2").text(titulo);
+			
+			$(".lightbox-container").css("display", "block");
+			
+	        $(".lightbox-media a").click(function () {
+	            $(".lightbox-container").css("display", "none");
+	        });
+			
+			
+			
+	        $('body').animate(
+	    		{ scrollTop:0 }, '500'
+	    	);
+	    });
+		
+		function escondeImgLightbox(){
+			$(".frame-img img").css("display", "none");	
+		}
 	}
 
 	//Fitvids
