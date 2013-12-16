@@ -239,28 +239,51 @@ $( document ).ready(function() {
 		var numImg = $(sl + " " + cs + " li").length;
 		$(sl + " " + cs + " a").click(function(){
 			var id = $(this).attr("id");
-			id = id.replace("control-", "");
+			if(idSlider == null){
+				id = id.replace("control-", "");
+			} else {
+				id = id.replace("control-", idSlider + "-");
+			}
 			limpiaControl();
 			$(this).addClass("activo");
 			limpiaImg();
 			$(sl +" img#" + id).addClass("activo");
 		});
 		$(sl +" .flecha-der").click(function() {
-			var activo = $(sl +" img.activo").attr("id");
+			var id = $(sl +" img.activo").attr("id");
+			if(idSlider == null) {
+				var activo = $(sl +" img.activo").attr("id");
+			} else {
+				var activo = id.replace(idSlider + "-", "");
+			}
 			limpiaImg();
 			limpiaControl();
 			activo = parseInt(activo) + 1;
 			if(activo > numImg) activo = 1;
-			$(sl +" img#" + activo).addClass("activo");
+
+			if(idSlider == null){
+				$(sl +" img#" + activo).addClass("activo");
+			} else {
+				$(sl +" img#" + idSlider + "-" + activo).addClass("activo");
+			}
 			$(sl +" .control-slider a#control-" + activo).addClass("activo");
 		});
 		$(sl +" .flecha-izq").click(function() {
-			var activo = $(sl +" img.activo").attr("id");
+			var id = $(sl +" img.activo").attr("id");
+			if(idSlider == null) {
+				var activo = $(sl +" img.activo").attr("id");
+			} else {
+				var activo = id.replace(idSlider + "-", "");
+			}
 			limpiaImg();
 			limpiaControl();
 			activo = parseInt(activo) - 1;
 			if(activo < 1) activo = numImg;
-			$(sl +" img#" + activo).addClass("activo");
+			if(idSlider == null){
+				$(sl +" img#" + activo).addClass("activo");
+			} else {
+				$(sl +" img#" + idSlider + "-" + activo).addClass("activo");
+			}
 			$(sl +" .control-slider a#control-" + activo).addClass("activo");
 		});
 
@@ -272,43 +295,30 @@ $( document ).ready(function() {
 		}
 	}
 
-	function slider1(idSlider) {
+	function sliderVid(idSlider) {
 		if(idSlider == null){
-			var sl = ".slider1"
+			var sl = ".slider-vid";	
+			var cs = ".control-slider-vid";
+		} else {
+			var sl = ".slider-" + idSlider;
+			var cs = ".control-slider-" + idSlider;
 		}
-		var numImg = $(sl + " .control-slider li").length;
-		$(sl + " .control-slider a").click(function(){
+		var numVid = $(sl + " " + cs + " li").length;
+		$(sl + " " + cs + " a").click(function(){
 			var id = $(this).attr("id");
-			id = id.replace("control-", "");
+			id = id.replace("control-vid-", "");
 			limpiaControl();
 			$(this).addClass("activo");
-			limpiaImg();
-			$(cs +" img#" + id).addClass("activo");
-		});
-		$(sl +" .flecha-der").click(function() {
-			var activo = $(sl +" img.activo").attr("id");
-			limpiaImg();
-			limpiaControl();
-			activo = parseInt(activo) + 1;
-			if(activo > numImg) activo = 1;
-			$(sl +" img#" + activo).addClass("activo");
-			$(sl +" .control-slider a#control-" + activo).addClass("activo");
-		});
-		$(sl +" .flecha-izq").click(function() {
-			var activo = $(sl +" img.activo").attr("id");
-			limpiaImg();
-			limpiaControl();
-			activo = parseInt(activo) - 1;
-			if(activo < 1) activo = numImg;
-			$(sl +" img#" + activo).addClass("activo");
-			$(sl +" .control-slider a#control-" + activo).addClass("activo");
+			limpiaVid();
+			$(sl +" .video" + id).addClass("activo");
 		});
 
 		function limpiaControl() {
-			$(sl +" .control-slider a").removeClass("activo");
+			$(sl +" .control-slider-vid a").removeClass("activo");
 		}
-		function limpiaImg() {
-			$(sl +" img").removeClass("activo");
+		function limpiaVid() {
+			$(sl +" .video1").removeClass("activo");
+			$(sl +" .video2").removeClass("activo");
 		}
 	}
 
@@ -394,10 +404,13 @@ $( document ).ready(function() {
 
 	//Fitvids
 	$(function(){
-		$('.video').fitVids();
+		$('.video1').fitVids();
+		$('.video2').fitVids();
 		//jQuery('#videos').fitVids();
 	});
 	
+	
+	// API YouTube
 	function callPlayer(frame_id, func, args) {
 		if (window.jQuery && frame_id instanceof jQuery) frame_id = frame_id.get(0).id;
 		var iframe = document.getElementById(frame_id);
@@ -477,9 +490,6 @@ $( document ).ready(function() {
 		}
 	}
 	
-	// Example: call play
-	// Note that the function automatically queues
-	// the request when the DOM/frame is not ready yet
-	callPlayer('whateverID', 'playVideo');
+	
 
 
