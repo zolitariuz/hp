@@ -314,7 +314,6 @@ $( document ).ready(function() {
 			limpiaControl();
 			activo = parseInt(activo) + 1;
 			if(activo > numVid) activo = 1;
-
 			$(sl +" div#" + activo).addClass("activo");
 			$(sl +" .control-slider-vid a#control-vid-" + activo).addClass("activo");
 		});
