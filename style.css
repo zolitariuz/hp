@@ -286,7 +286,7 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 .slider-vid .flecha-der-vid{ position: absolute; top: 46%; right: 0; }
 .slider-vid a > img{ display: block !important; width: 100% !important; height: auto !important; display: block !important; margin: 0 !important;}
 .slider-vid .video1,
-.slider-vid .video2 { width:100%; display:none; margin-left:0; }
+.slider-vid .video2 { width:80%; display:none; margin-left:0; }
 .slider-vid .video1.activo,
 .slider-vid .video2.activo { display:block; }
 .slider-vid .video1 iframe,
@@ -360,7 +360,7 @@ header .instruccion { display: none; margin: 20px 0 10px 0; font-family: 'hp_reg
 
 /* pantalla grande ----------- */
 @media only screen
-and (min-width : 1350px){
+and (min-width : 1400px){
 	/* HOME */
 	header { padding-bottom:15px;}
 	header h1{ font-size:52px; line-height:110px; }
@@ -400,6 +400,18 @@ and (min-width : 1350px){
 	.contenido-datos div ul li a { line-height: 60px; font-size: 18px;}
 }
 
+/* lap y desktops ----------- */
+@media only screen
+and (min-width : 1025px)
+and (max-width: 1399px)
+{
+	/* SEGMENTOS */
+	.seccion-segmento > ul li { font-size: 18px; }
+
+	/* HISTORIAS EXITO */
+	.panel-historias p { font-size:20px; line-height:30px; }
+}
+
 /* iPads (landscape) ----------- */
 @media only screen
 and (min-width : 768px)
@@ -411,7 +423,7 @@ and (max-width : 1024px) {
 	.content{ width: 80%; }
 
 	/* SEGMENTOS */
-	.main-content .seccion-segmento ul li { width: 47%; margin-bottom: 15px; margin-top:-5px; font-size: 14px; }
+	.main-content .seccion-segmento ul li { width: 47%; margin-bottom: 15px; margin-top:-5px; font-size: 16px; }
 }
 
 /* iPads Todo ----------- */

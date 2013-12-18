@@ -296,13 +296,8 @@ $( document ).ready(function() {
 	}
 
 	function sliderVid(idSlider) {
-		if(idSlider == null){
-			var sl = ".slider-vid";	
-			var cs = ".control-slider-vid";
-		} else {
-			var sl = ".slider-" + idSlider;
-			var cs = ".control-slider-" + idSlider;
-		}
+		var sl = ".slider-vid";	
+		var cs = ".control-slider-vid";
 		var numVid = $(sl + " " + cs + " li").length;
 		$(sl + " " + cs + " a").click(function(){
 			var id = $(this).attr("id");
@@ -311,6 +306,27 @@ $( document ).ready(function() {
 			$(this).addClass("activo");
 			limpiaVid();
 			$(sl +" .video" + id).addClass("activo");
+		});
+		$(sl +" .flecha-der-vid").click(function() {
+			var id = $(sl +" div.activo").attr("id");
+			var activo = $(sl +" div.activo").attr("id");
+			limpiaVid();
+			limpiaControl();
+			activo = parseInt(activo) + 1;
+			if(activo > numVid) activo = 1;
+
+			$(sl +" div#" + activo).addClass("activo");
+			$(sl +" .control-slider-vid a#control-vid-" + activo).addClass("activo");
+		});
+		$(sl +" .flecha-izq-vid").click(function() {
+			var id = $(sl +" div.activo").attr("id");
+			var activo = $(sl +" div.activo").attr("id");
+			limpiaVid();
+			limpiaControl();
+			activo = parseInt(activo) - 1;
+			if(activo < 1) activo = numVid;
+			$(sl +" div#" + activo).addClass("activo");
+			$(sl +" .control-slider-vid a#control-vid-" + activo).addClass("activo");
 		});
 
 		function limpiaControl() {
